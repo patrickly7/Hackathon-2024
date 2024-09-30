@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dyr8qd11despu"]
+[gd_scene load_steps=4 format=3 uid="uid://dyr8qd11despu"]
 
 [ext_resource type="Texture2D" uid="uid://dnnjciwy3581m" path="res://Assets/Art/Graybox_Cabinet_Outside.png" id="1_nd0c5"]
+[ext_resource type="Script" path="res://Scripts/cabinet.gd" id="1_reumo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_my517"]
 size = Vector2(192, 208)
@@ -8,6 +9,7 @@ size = Vector2(192, 208)
 [node name="Cabinet" type="RigidBody2D" groups=["cabinet"]]
 gravity_scale = 0.0
 freeze = true
+script = ExtResource("1_reumo")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

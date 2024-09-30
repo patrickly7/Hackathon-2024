@@ -1,6 +1,7 @@
 extends Area2D
 
 signal open_cabinet
+signal ship_package
 
 @export var speed = 400 # How fast the player will move (pixels/sec).
 var screen_size # Size of the game window.

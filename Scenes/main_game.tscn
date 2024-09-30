@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://2qrnnjfd26oc"]
+[gd_scene load_steps=12 format=3 uid="uid://2qrnnjfd26oc"]
 
 [ext_resource type="Script" path="res://Scripts/main_game.gd" id="1_bf2dl"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_m6rd2"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dvnupaug5ft8e" path="res://Assets/Art/Icons/Graybox_BubbleMailer.png" id="8_agakp"]
 [ext_resource type="Texture2D" uid="uid://7su2pkquhwok" path="res://Assets/Art/Icons/Graybox_Package.png" id="9_ex2gj"]
 [ext_resource type="PackedScene" uid="uid://dyr8qd11despu" path="res://Scenes/cabinet.tscn" id="10_0l61s"]
+[ext_resource type="PackedScene" uid="uid://kqmkdpt7mlw4" path="res://Scenes/sq_sheet.tscn" id="11_a8i3j"]
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_bf2dl")
@@ -101,6 +102,12 @@ one_shot = true
 
 [node name="CabinetView" parent="." instance=ExtResource("6_lugco")]
 visible = false
+
+[node name="SQSheet" parent="." instance=ExtResource("11_a8i3j")]
+offset_left = 1656.0
+offset_top = 552.0
+offset_right = 1656.0
+offset_bottom = 552.0
 
 [connection signal="pressed" from="HelpButton" to="." method="_on_help_button_pressed"]
 [connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
