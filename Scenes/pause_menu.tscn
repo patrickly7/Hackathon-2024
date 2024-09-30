@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://de1r0bx54exk2"]
+
+[ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_jtxnp"]
+[ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="1_qj5hr"]
+
+[node name="PauseMenu" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qj5hr")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1924.0
+offset_bottom = 1081.0
+color = Color(0, 0, 0, 0.294118)
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 2
+offset_left = 3.0
+offset_top = 191.0
+offset_right = 1923.0
+offset_bottom = 366.0
+theme_override_fonts/font = ExtResource("1_jtxnp")
+theme_override_font_sizes/font_size = 128
+text = "PAUSED"
+horizontal_alignment = 1
+
+[node name="ResumeButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 813.0
+offset_top = 405.0
+offset_right = 1117.0
+offset_bottom = 529.0
+theme_override_fonts/font = ExtResource("1_jtxnp")
+theme_override_font_sizes/font_size = 64
+text = "Resume"
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 814.0
+offset_top = 581.0
+offset_right = 1119.0
+offset_bottom = 703.0
+theme_override_fonts/font = ExtResource("1_jtxnp")
+theme_override_font_sizes/font_size = 64
+text = "Quit"
+
+[connection signal="pressed" from="ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
