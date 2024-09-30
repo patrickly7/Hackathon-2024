@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://g1ry4j0al1q8"]
+
+[ext_resource type="Script" path="res://Scripts/shipping_station.gd" id="1_cq8ni"]
+[ext_resource type="Texture2D" uid="uid://di82s51j0f28x" path="res://Assets/Art/Graybox_ShippingStation.png" id="1_cs343"]
+[ext_resource type="Texture2D" uid="uid://dg3bi6cu2vrf6" path="res://Assets/Art/Icons/Graybox_Envelope.png" id="3_bsgse"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yv2qp"]
+size = Vector2(230, 211)
+
+[node name="ShippingStation" type="RigidBody2D"]
+gravity_scale = 0.0
+freeze = true
+script = ExtResource("1_cq8ni")
+packageType = ExtResource("3_bsgse")
+metadata/_edit_group_ = true
+
+[node name="Table" type="Sprite2D" parent="."]
+texture = ExtResource("1_cs343")
+
+[node name="PackageTypeIcon" type="Sprite2D" parent="."]
+position = Vector2(0, -45)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("3_bsgse")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -1.5)
+shape = SubResource("RectangleShape2D_yv2qp")

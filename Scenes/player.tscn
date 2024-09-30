@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://cqgrlms77vnu3"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_t3mnq"]
-[ext_resource type="Texture2D" uid="uid://b4mk4qi814i4y" path="res://Assets/Art/Character/Graybox_Front_Walk.png" id="2_6hfpm"]
 [ext_resource type="Texture2D" uid="uid://w2kly74v8v3l" path="res://Assets/Art/Character/Levi_Front_128x256.png" id="2_elcat"]
-[ext_resource type="Texture2D" uid="uid://c5456l0jkkxv5" path="res://Assets/Art/Character/Graybox_Back.png" id="3_2nvbl"]
-[ext_resource type="Texture2D" uid="uid://bvp5eh12vl0tv" path="res://Assets/Art/Character/Graybox_Back_Walk.png" id="4_ophsm"]
+[ext_resource type="Texture2D" uid="uid://bej8h6shdamvn" path="res://Assets/Art/Character/Levi_Front_Walk_128x256.png" id="3_1ckoe"]
+[ext_resource type="Texture2D" uid="uid://kee2a43iyhr" path="res://Assets/Art/Character/Levi_Back.png" id="4_7a1e8"]
+[ext_resource type="Texture2D" uid="uid://cu6drnv3aovaj" path="res://Assets/Art/Character/Levi_Back_Walk.png" id="5_fh74c"]
 [ext_resource type="Texture2D" uid="uid://ct4mvmxcr08hd" path="res://Assets/Art/Character/Graybox_Side.png" id="5_u3swb"]
 [ext_resource type="Texture2D" uid="uid://dypqqcwp5by5y" path="res://Assets/Art/Character/Graybox_Side_Walk.png" id="6_743jq"]
 
@@ -15,7 +15,7 @@ animations = [{
 "texture": ExtResource("2_elcat")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_6hfpm")
+"texture": ExtResource("3_1ckoe")
 }],
 "loop": true,
 "name": &"down",
@@ -23,10 +23,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_2nvbl")
+"texture": ExtResource("4_7a1e8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_ophsm")
+"texture": ExtResource("5_fh74c")
 }],
 "loop": true,
 "name": &"up",
@@ -55,8 +55,8 @@ metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_smtxl")
-animation = &"down"
-frame_progress = 0.191257
+animation = &"up"
+frame_progress = 0.800266
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_fgoyj")

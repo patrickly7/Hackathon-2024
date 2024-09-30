@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyr8qd11despu"]
+
+[ext_resource type="Texture2D" uid="uid://dnnjciwy3581m" path="res://Assets/Art/Graybox_Cabinet_Outside.png" id="1_nd0c5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_my517"]
+size = Vector2(192, 208)
+
+[node name="Cabinet" type="RigidBody2D"]
+gravity_scale = 0.0
+freeze = true
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("1_nd0c5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_my517")

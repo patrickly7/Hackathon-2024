@@ -80,6 +80,15 @@ func show_buttons():
 	$HelpButton.show()
 	$PauseButton.show()
 
+func hide_stations():
+	$EnvelopeStation.hide()
+	$BubbleMailerStation.hide()
+	$BoxStation.hide()
+	
+func show_stations():
+	$EnvelopeStation.show()
+	$BubbleMailerStation.show()
+	$BoxStation.show()
 
 func _on_cabinet_view_hidden():
 	show_buttons()

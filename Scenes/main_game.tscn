@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://2qrnnjfd26oc"]
+[gd_scene load_steps=11 format=3 uid="uid://2qrnnjfd26oc"]
 
 [ext_resource type="Script" path="res://Scripts/main_game.gd" id="1_bf2dl"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_m6rd2"]
@@ -6,6 +6,10 @@
 [ext_resource type="PackedScene" uid="uid://de1r0bx54exk2" path="res://Scenes/pause_menu.tscn" id="4_2h1lt"]
 [ext_resource type="PackedScene" uid="uid://dqy1037b3h5uq" path="res://Scenes/help_menu.tscn" id="5_iq3vo"]
 [ext_resource type="PackedScene" uid="uid://bg1xrpjfwt311" path="res://Scenes/cabinet_view.tscn" id="6_lugco"]
+[ext_resource type="PackedScene" uid="uid://g1ry4j0al1q8" path="res://Scenes/shipping_station.tscn" id="7_2uex1"]
+[ext_resource type="Texture2D" uid="uid://dvnupaug5ft8e" path="res://Assets/Art/Icons/Graybox_BubbleMailer.png" id="8_agakp"]
+[ext_resource type="Texture2D" uid="uid://7su2pkquhwok" path="res://Assets/Art/Icons/Graybox_Package.png" id="9_ex2gj"]
+[ext_resource type="PackedScene" uid="uid://dyr8qd11despu" path="res://Scenes/cabinet.tscn" id="10_0l61s"]
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_bf2dl")
@@ -14,17 +18,6 @@ script = ExtResource("1_bf2dl")
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0, 0.469186, 0.472614, 1)
-
-[node name="Timer" type="Timer" parent="."]
-
-[node name="TimerLabel" type="Label" parent="."]
-offset_left = 111.0
-offset_top = 39.0
-offset_right = 282.0
-offset_bottom = 96.0
-theme_override_fonts/font = ExtResource("1_m6rd2")
-theme_override_font_sizes/font_size = 64
-text = "180"
 
 [node name="HelpButton" type="Button" parent="."]
 visible = false
@@ -46,12 +39,55 @@ theme_override_fonts/font = ExtResource("1_m6rd2")
 theme_override_font_sizes/font_size = 32
 text = "Pause"
 
-[node name="Player" parent="." instance=ExtResource("2_qawf6")]
-
 [node name="StartPosition" type="Marker2D" parent="."]
 position = Vector2(960, 540)
 
+[node name="PauseMenu" parent="." instance=ExtResource("4_2h1lt")]
+visible = false
+
+[node name="HelpMenu" parent="." instance=ExtResource("5_iq3vo")]
+visible = false
+
+[node name="Cabinet1" parent="." instance=ExtResource("10_0l61s")]
+position = Vector2(304, 220)
+
+[node name="Cabinet2" parent="." instance=ExtResource("10_0l61s")]
+position = Vector2(736, 220)
+
+[node name="Cabinet3" parent="." instance=ExtResource("10_0l61s")]
+position = Vector2(1184, 220)
+
+[node name="Cabinet4" parent="." instance=ExtResource("10_0l61s")]
+position = Vector2(1616, 220)
+
+[node name="Player" parent="." instance=ExtResource("2_qawf6")]
+position = Vector2(960, 539)
+speed = 1000
+
+[node name="EnvelopeStation" parent="." instance=ExtResource("7_2uex1")]
+position = Vector2(312, 920)
+
+[node name="BubbleMailerStation" parent="." instance=ExtResource("7_2uex1")]
+position = Vector2(960, 920)
+packageType = ExtResource("8_agakp")
+
+[node name="BoxStation" parent="." instance=ExtResource("7_2uex1")]
+position = Vector2(1616, 920)
+packageType = ExtResource("9_ex2gj")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="TimerLabel" type="Label" parent="."]
+offset_left = 111.0
+offset_top = 39.0
+offset_right = 282.0
+offset_bottom = 96.0
+theme_override_fonts/font = ExtResource("1_m6rd2")
+theme_override_font_sizes/font_size = 64
+text = "180"
+
 [node name="Message" type="Label" parent="."]
+visible = false
 offset_right = 1920.0
 offset_bottom = 397.0
 theme_override_fonts/font = ExtResource("1_m6rd2")
@@ -64,19 +100,13 @@ vertical_alignment = 1
 wait_time = 2.0
 one_shot = true
 
-[node name="PauseMenu" parent="." instance=ExtResource("4_2h1lt")]
-visible = false
-
-[node name="HelpMenu" parent="." instance=ExtResource("5_iq3vo")]
-visible = false
-
 [node name="CabinetView" parent="." instance=ExtResource("6_lugco")]
 visible = false
 
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="pressed" from="HelpButton" to="." method="_on_help_button_pressed"]
 [connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
-[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
 [connection signal="hidden" from="PauseMenu" to="." method="_on_pause_menu_hidden"]
 [connection signal="hidden" from="HelpMenu" to="." method="_on_help_menu_hidden"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
 [connection signal="hidden" from="CabinetView" to="." method="_on_cabinet_view_hidden"]
