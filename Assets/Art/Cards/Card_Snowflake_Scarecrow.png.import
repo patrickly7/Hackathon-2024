@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqee1w4a1sllw"
-path="res://.godot/imported/Graybox_Card.png-f4a81130e94c8b59a8b3e5f0966c9957.ctex"
+uid="uid://c5x4bpxmqnvf5"
+path="res://.godot/imported/Card_Snowflake_Scarecrow.png-b65ffebf6b2a288749bb6dd48d7e5397.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Cards/Graybox_Card.png"
-dest_files=["res://.godot/imported/Graybox_Card.png-f4a81130e94c8b59a8b3e5f0966c9957.ctex"]
+source_file="res://Assets/Art/Cards/Card_Snowflake_Scarecrow.png"
+dest_files=["res://.godot/imported/Card_Snowflake_Scarecrow.png-b65ffebf6b2a288749bb6dd48d7e5397.ctex"]
 
 [params]
 

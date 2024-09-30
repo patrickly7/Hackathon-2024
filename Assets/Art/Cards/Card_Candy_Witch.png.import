@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqee1w4a1sllw"
-path="res://.godot/imported/Graybox_Card.png-f4a81130e94c8b59a8b3e5f0966c9957.ctex"
+uid="uid://vrxv4h0pdo8"
+path="res://.godot/imported/Card_Candy_Witch.png-59924c174c003614af1eec8a52f6448e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Cards/Graybox_Card.png"
-dest_files=["res://.godot/imported/Graybox_Card.png-f4a81130e94c8b59a8b3e5f0966c9957.ctex"]
+source_file="res://Assets/Art/Cards/Card_Candy_Witch.png"
+dest_files=["res://.godot/imported/Card_Candy_Witch.png-59924c174c003614af1eec8a52f6448e.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqee1w4a1sllw"
-path="res://.godot/imported/Graybox_Card.png-f4a81130e94c8b59a8b3e5f0966c9957.ctex"
+uid="uid://b6fd6l2wow5o8"
+path="res://.godot/imported/Card_CandyCorn.png-f2e4b668dd3cf3cf3b4545d4266976d5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Cards/Graybox_Card.png"
-dest_files=["res://.godot/imported/Graybox_Card.png-f4a81130e94c8b59a8b3e5f0966c9957.ctex"]
+source_file="res://Assets/Art/Cards/Card_CandyCorn.png"
+dest_files=["res://.godot/imported/Card_CandyCorn.png-f2e4b668dd3cf3cf3b4545d4266976d5.ctex"]
 
 [params]
 
