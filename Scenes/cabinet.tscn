@@ -5,7 +5,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_my517"]
 size = Vector2(192, 208)
 
-[node name="Cabinet" type="RigidBody2D"]
+[node name="Cabinet" type="RigidBody2D" groups=["cabinet"]]
 gravity_scale = 0.0
 freeze = true
 metadata/_edit_group_ = true

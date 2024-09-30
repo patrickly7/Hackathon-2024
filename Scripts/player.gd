@@ -1,8 +1,14 @@
 extends Area2D
-signal hit
+
+signal open_cabinet
 
 @export var speed = 400 # How fast the player will move (pixels/sec).
 var screen_size # Size of the game window.
+
+var touchingCabinet = false
+var touchingShippingStation = false
+
+var inactive = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -13,6 +19,14 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if inactive:
+		return
+	
+	if Input.is_action_pressed("action") and touchingCabinet:
+		open_cabinet.emit()
+		inactive = true
+		return
+	
 	var velocity = Vector2.ZERO # The player's movement vector.
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
@@ -36,7 +50,7 @@ func _process(delta):
 		$AnimatedSprite2D.animation = "walk"
 		$AnimatedSprite2D.flip_v = false
 		# See the note below about the following boolean assignment.
-		$AnimatedSprite2D.flip_h = velocity.x < 0
+		$AnimatedSprite2D.flip_h = velocity.x > 0
 	elif velocity.y != 0:
 		if velocity.y < 0:
 			$AnimatedSprite2D.animation = "up"
@@ -45,9 +59,21 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	hit.emit()
+	if body.is_in_group("cabinet"):
+		print('WHOA! A CABINET!')
+		touchingCabinet = true
+	elif body.is_in_group("shipping_station"):
+		print('WHOA! A SHIPPING STATION!')
+		touchingShippingStation = true
+	
+func _on_body_exited(body):
+	print('BYE BODY')
+	touchingCabinet = false
+	touchingShippingStation = false
 	
 func start(pos):
 	position = pos
 	show()
 	$CollisionShape2D.disabled = false
+
+

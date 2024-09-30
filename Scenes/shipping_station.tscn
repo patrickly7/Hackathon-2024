@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yv2qp"]
 size = Vector2(230, 211)
 
-[node name="ShippingStation" type="RigidBody2D"]
+[node name="ShippingStation" type="RigidBody2D" groups=["shipping_station"]]
 gravity_scale = 0.0
 freeze = true
 script = ExtResource("1_cq8ni")

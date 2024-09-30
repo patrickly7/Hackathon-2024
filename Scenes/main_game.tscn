@@ -78,16 +78,15 @@ packageType = ExtResource("9_ex2gj")
 [node name="Timer" type="Timer" parent="."]
 
 [node name="TimerLabel" type="Label" parent="."]
-offset_left = 111.0
+offset_left = 97.0
 offset_top = 39.0
-offset_right = 282.0
+offset_right = 268.0
 offset_bottom = 96.0
 theme_override_fonts/font = ExtResource("1_m6rd2")
 theme_override_font_sizes/font_size = 64
 text = "180"
 
 [node name="Message" type="Label" parent="."]
-visible = false
 offset_right = 1920.0
 offset_bottom = 397.0
 theme_override_fonts/font = ExtResource("1_m6rd2")
