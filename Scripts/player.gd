@@ -8,8 +8,6 @@ var screen_size # Size of the game window.
 var touchingCabinet = false
 var touchingShippingStation = false
 
-var inactive = false
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screen_size = get_viewport_rect().size
@@ -19,12 +17,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if inactive:
-		return
-	
 	if Input.is_action_pressed("action") and touchingCabinet:
 		open_cabinet.emit()
-		inactive = true
 		return
 	
 	var velocity = Vector2.ZERO # The player's movement vector.

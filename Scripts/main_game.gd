@@ -12,9 +12,10 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if Input.is_action_pressed("action"):
-		$CabinetView.show()
-		hide_buttons()
+	pass
+	#if Input.is_action_pressed("action"):
+		#$CabinetView.show()
+		#hide_buttons()
 
 func game_over():
 	get_tree().change_scene_to_file("res://Scenes/results_screen.tscn")
@@ -92,3 +93,8 @@ func show_stations():
 
 func _on_cabinet_view_hidden():
 	show_buttons()
+
+
+func _on_player_open_cabinet():
+	$CabinetView.show()
+	hide_buttons()

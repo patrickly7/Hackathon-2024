@@ -106,6 +106,7 @@ visible = false
 [connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
 [connection signal="hidden" from="PauseMenu" to="." method="_on_pause_menu_hidden"]
 [connection signal="hidden" from="HelpMenu" to="." method="_on_help_menu_hidden"]
+[connection signal="open_cabinet" from="Player" to="." method="_on_player_open_cabinet"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
 [connection signal="hidden" from="CabinetView" to="." method="_on_cabinet_view_hidden"]
