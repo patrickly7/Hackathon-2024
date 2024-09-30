@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://cqgrlms77vnu3"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_t3mnq"]
-[ext_resource type="Texture2D" uid="uid://w2kly74v8v3l" path="res://Assets/Art/Character/Levi_Front_128x256.png" id="2_elcat"]
-[ext_resource type="Texture2D" uid="uid://bej8h6shdamvn" path="res://Assets/Art/Character/Levi_Front_Walk_128x256.png" id="3_1ckoe"]
+[ext_resource type="Texture2D" uid="uid://ejsfkaaaelu1" path="res://Assets/Art/Character/Levi_Front.png" id="2_5wto8"]
+[ext_resource type="Texture2D" uid="uid://b2e8i6ubl5ryc" path="res://Assets/Art/Character/Levi_Front_Walk.png" id="3_1eb8p"]
 [ext_resource type="Texture2D" uid="uid://kee2a43iyhr" path="res://Assets/Art/Character/Levi_Back.png" id="4_7a1e8"]
 [ext_resource type="Texture2D" uid="uid://cu6drnv3aovaj" path="res://Assets/Art/Character/Levi_Back_Walk.png" id="5_fh74c"]
 [ext_resource type="Texture2D" uid="uid://c4w7ga1p0e8c8" path="res://Assets/Art/Character/Levi_Side.png" id="6_p7xow"]
@@ -12,10 +12,10 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_elcat")
+"texture": ExtResource("2_5wto8")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_1ckoe")
+"texture": ExtResource("3_1eb8p")
 }],
 "loop": true,
 "name": &"down",
@@ -55,8 +55,8 @@ metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_smtxl")
-animation = &"walk"
-frame_progress = 0.260892
+animation = &"down"
+frame_progress = 0.631291
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_fgoyj")
