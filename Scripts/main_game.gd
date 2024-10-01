@@ -94,7 +94,14 @@ func _on_cabinet_view_hidden():
 	show_buttons()
 
 
-func _on_player_open_cabinet():
+func _on_player_open_cabinet(cabinetNum):
 	# TBD - add a way to freeze player when opening cabinet
-	$CabinetView.show()
+	if cabinetNum == 1:
+		$CabinetView.show()
+	elif cabinetNum == 2:
+		$CabinetView2.show()
+	elif cabinetNum == 3:
+		$CabinetView3.show()
+	else:
+		$CabinetView4.show()
 	hide_buttons()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://2qrnnjfd26oc"]
+[gd_scene load_steps=16 format=3 uid="uid://2qrnnjfd26oc"]
 
 [ext_resource type="Script" path="res://Scripts/main_game.gd" id="1_bf2dl"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_m6rd2"]
@@ -9,8 +9,12 @@
 [ext_resource type="PackedScene" uid="uid://g1ry4j0al1q8" path="res://Scenes/shipping_station.tscn" id="7_2uex1"]
 [ext_resource type="Texture2D" uid="uid://dvnupaug5ft8e" path="res://Assets/Art/Icons/Graybox_BubbleMailer.png" id="8_agakp"]
 [ext_resource type="Texture2D" uid="uid://7su2pkquhwok" path="res://Assets/Art/Icons/Graybox_Package.png" id="9_ex2gj"]
+[ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="9_y754s"]
 [ext_resource type="PackedScene" uid="uid://dyr8qd11despu" path="res://Scenes/cabinet.tscn" id="10_0l61s"]
+[ext_resource type="Texture2D" uid="uid://dbjfpkgay2y4d" path="res://Assets/Art/Icons/Set_Shield.png" id="10_qfdby"]
+[ext_resource type="Texture2D" uid="uid://qbpbpoupd7e7" path="res://Assets/Art/Icons/Set_Staff.png" id="11_6ts73"]
 [ext_resource type="PackedScene" uid="uid://kqmkdpt7mlw4" path="res://Scenes/sq_sheet.tscn" id="11_a8i3j"]
+[ext_resource type="Texture2D" uid="uid://tlhiaal4n5cx" path="res://Assets/Art/Icons/Set_Sword.png" id="12_ql2yy"]
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_bf2dl")
@@ -96,6 +100,22 @@ one_shot = true
 
 [node name="CabinetView" parent="." instance=ExtResource("6_lugco")]
 visible = false
+setIcon = ExtResource("9_y754s")
+
+[node name="CabinetView2" parent="." instance=ExtResource("6_lugco")]
+visible = false
+cabinetNumber = 2
+setIcon = ExtResource("10_qfdby")
+
+[node name="CabinetView3" parent="." instance=ExtResource("6_lugco")]
+visible = false
+cabinetNumber = 3
+setIcon = ExtResource("11_6ts73")
+
+[node name="CabinetView4" parent="." instance=ExtResource("6_lugco")]
+visible = false
+cabinetNumber = 4
+setIcon = ExtResource("12_ql2yy")
 
 [node name="SQSheet" parent="." instance=ExtResource("11_a8i3j")]
 visible = false
@@ -116,5 +136,8 @@ visible = false
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
 [connection signal="hidden" from="CabinetView" to="." method="_on_cabinet_view_hidden"]
+[connection signal="hidden" from="CabinetView2" to="." method="_on_cabinet_view_hidden"]
+[connection signal="hidden" from="CabinetView3" to="." method="_on_cabinet_view_hidden"]
+[connection signal="hidden" from="CabinetView4" to="." method="_on_cabinet_view_hidden"]
 [connection signal="hidden" from="PauseMenu" to="." method="_on_pause_menu_hidden"]
 [connection signal="hidden" from="HelpMenu" to="." method="_on_help_menu_hidden"]
