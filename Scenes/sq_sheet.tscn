@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://kqmkdpt7mlw4"]
+[gd_scene load_steps=6 format=3 uid="uid://kqmkdpt7mlw4"]
 
 [ext_resource type="Texture2D" uid="uid://dxwxnx7pqbjhh" path="res://Assets/Art/SqSheet.png" id="1_8q8h3"]
 [ext_resource type="Script" path="res://Scripts/sq_sheet.gd" id="1_s8lbn"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="2_4qbwk"]
 [ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="4_nhrbk"]
+[ext_resource type="Texture2D" uid="uid://ce4f0cqxyq4gj" path="res://Assets/Art/SqSheet_Checkmark.png" id="5_d6pdm"]
 
 [node name="SQSheet" type="Control"]
 layout_mode = 3
@@ -71,6 +72,11 @@ position = Vector2(131, -123)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_nhrbk")
 
+[node name="Checkmark" type="Sprite2D" parent="SQItems/SQItem1"]
+visible = false
+position = Vector2(200, -136)
+texture = ExtResource("5_d6pdm")
+
 [node name="SQItem2" type="Node2D" parent="SQItems"]
 position = Vector2(0, 75)
 
@@ -98,6 +104,11 @@ text = "Snowflake Candy Corn"
 position = Vector2(131, -123)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_nhrbk")
+
+[node name="Checkmark" type="Sprite2D" parent="SQItems/SQItem2"]
+visible = false
+position = Vector2(200, -134)
+texture = ExtResource("5_d6pdm")
 
 [node name="SQItem3" type="Node2D" parent="SQItems"]
 position = Vector2(0, 150)
@@ -127,6 +138,11 @@ position = Vector2(131, -123)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_nhrbk")
 
+[node name="Checkmark" type="Sprite2D" parent="SQItems/SQItem3"]
+visible = false
+position = Vector2(200, -136)
+texture = ExtResource("5_d6pdm")
+
 [node name="SQItem4" type="Node2D" parent="SQItems"]
 position = Vector2(0, 225)
 
@@ -154,6 +170,11 @@ text = "Snowflake Candy Corn"
 position = Vector2(131, -123)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_nhrbk")
+
+[node name="Checkmark" type="Sprite2D" parent="SQItems/SQItem4"]
+visible = false
+position = Vector2(200, -138)
+texture = ExtResource("5_d6pdm")
 
 [node name="CompleteStamp" type="Sprite2D" parent="."]
 visible = false

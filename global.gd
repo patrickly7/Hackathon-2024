@@ -59,7 +59,7 @@ const cardToSetIconDict = {
 }
 
 var cardsToPull = []
-var cardsPulled = []
+var cardsPulled = {}
 var currentSQ = ""
 var currentSQWeight = 0
 
