@@ -23,22 +23,66 @@ theme_override_font_sizes/font_size = 128
 text = "RESULTS HERE"
 horizontal_alignment = 1
 
+[node name="CorrectCardsPulled" type="Label" parent="."]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 382.0
+offset_right = 1083.0
+offset_bottom = 470.0
+theme_override_fonts/font = ExtResource("1_h6jqq")
+theme_override_font_sizes/font_size = 64
+text = "Correct Cards Pulled"
+horizontal_alignment = 1
+
+[node name="IncorrectCardsPulled" type="Label" parent="."]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 461.0
+offset_right = 1083.0
+offset_bottom = 549.0
+theme_override_fonts/font = ExtResource("1_h6jqq")
+theme_override_font_sizes/font_size = 64
+text = "Incorrect Cards Pulled"
+horizontal_alignment = 1
+
+[node name="SQsCompleted" type="Label" parent="."]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 546.0
+offset_right = 1083.0
+offset_bottom = 634.0
+theme_override_fonts/font = ExtResource("1_h6jqq")
+theme_override_font_sizes/font_size = 64
+text = "SQ's Completed Here"
+horizontal_alignment = 1
+
+[node name="TimesWrongShippingUsed" type="Label" parent="."]
+layout_mode = 0
+offset_left = 76.0
+offset_top = 625.0
+offset_right = 1083.0
+offset_bottom = 713.0
+theme_override_fonts/font = ExtResource("1_h6jqq")
+theme_override_font_sizes/font_size = 64
+text = "Times Wrong Shipping Used"
+horizontal_alignment = 1
+
 [node name="PlayAgainButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 717.0
-offset_top = 405.0
-offset_right = 1201.0
-offset_bottom = 529.0
+offset_left = 1232.0
+offset_top = 574.0
+offset_right = 1716.0
+offset_bottom = 698.0
 theme_override_fonts/font = ExtResource("1_h6jqq")
 theme_override_font_sizes/font_size = 64
 text = "Play Again"
 
 [node name="QuitButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 721.0
-offset_top = 581.0
-offset_right = 1199.0
-offset_bottom = 703.0
+offset_left = 1234.0
+offset_top = 729.0
+offset_right = 1712.0
+offset_bottom = 851.0
 theme_override_fonts/font = ExtResource("1_h6jqq")
 theme_override_font_sizes/font_size = 64
 text = "Quit"

@@ -59,12 +59,41 @@ const cardToSetIconDict = {
 }
 
 var cardsToPull = []
-var cardsPulled = {}
+var cardsToPullQuantities = []
+var cardsPulled = []
+var cardsPulledQuantities = []
+
 var currentSQ = ""
 var currentSQWeight = 0
+var currentSQComplete = false
 
 # Used for Scoring
 var sqsCompleted = 0
 var wrongShippingUsed = 0
 var wrongCardsPulled = 0
 var correctCardsPulled = 0
+
+# Static Functions
+func getQuantityInCardsPulled(cardName):
+	for i in len(cardsPulled):
+		if cardsPulled[i] == cardName:
+			return cardsPulledQuantities[i]
+	return 0
+	
+func getIndexInCardsPulled(cardName):
+	for i in len(cardsPulled):
+		if cardsPulled[i] == cardName:
+			return i
+	return -1
+
+func getQuantityInCardsToPull(cardName):
+	for i in len(cardsToPull):
+		if cardsToPull[i] == cardName:
+			return cardsToPullQuantities[i]
+	return 0
+	
+func getIndexInCardsToPull(cardName):
+	for i in len(cardsToPull):
+		if cardsToPull[i] == cardName:
+			return i
+	return -1

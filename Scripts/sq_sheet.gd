@@ -18,35 +18,36 @@ func _process(delta):
 	# Generate a New SQ once one is finished
 	if $SQNumber.text != Global.currentSQ && isComplete:
 		isComplete = false
+		Global.currentSQComplete = false
 		generateSQ()
 		
 	# Check Off Finished Items on the SQ Sheet
 	if len(Global.cardsPulled) > 0:
 		var sqItem1CardName = $SQItems/SQItem1/CardName.text
-		if Global.cardsPulled[sqItem1CardName] == Global.cardsToPull[sqItem1CardName]:
+		if Global.getQuantityInCardsPulled(sqItem1CardName) == Global.getQuantityInCardsToPull(sqItem1CardName):
 			item1Complete = true
 			$SQItems/SQItem1/Checkmark.show()
 		else:
 			$SQItems/SQItem1/Checkmark.hide()
 			
 		var sqItem2CardName = $SQItems/SQItem2/CardName.text
-		if Global.cardsPulled[sqItem2CardName] == Global.cardsToPull[sqItem2CardName]:
+		if Global.getQuantityInCardsPulled(sqItem2CardName) == Global.getQuantityInCardsToPull(sqItem2CardName):
 			item2Complete = true
 			$SQItems/SQItem2/Checkmark.show()
 		else:
 			$SQItems/SQItem2/Checkmark.hide()
 			
-		if !$SQItems/SQItem3.hidden:
+		if !item3Complete:
 			var sqItem3CardName = $SQItems/SQItem3/CardName.text
-			if Global.cardsPulled[sqItem3CardName] == Global.cardsToPull[sqItem3CardName]:
+			if Global.getQuantityInCardsPulled(sqItem3CardName) == Global.getQuantityInCardsToPull(sqItem3CardName):
 				item3Complete = true
 				$SQItems/SQItem3/Checkmark.show()
 			else:
 				$SQItems/SQItem3/Checkmark.hide()
 		
-		if !$SQItems/SQItem4.hidden:
+		if !item4Complete:
 			var sqItem4CardName = $SQItems/SQItem4/CardName.text
-			if Global.cardsPulled[sqItem4CardName] == Global.cardsToPull[sqItem4CardName]:
+			if Global.getQuantityInCardsPulled(sqItem4CardName) == Global.getQuantityInCardsToPull(sqItem4CardName):
 				item4Complete = true
 				$SQItems/SQItem4/Checkmark.show()
 			else:
@@ -54,6 +55,7 @@ func _process(delta):
 		
 	if item1Complete and item2Complete and item3Complete and item4Complete:
 		isComplete = true
+		Global.currentSQComplete = true
 		
 	# Stamp SQ with Completion Stamp
 	if isComplete:
@@ -70,7 +72,9 @@ func generateSQNumber():
 func generateSQ():
 	# Reset All SQ Parameters
 	Global.cardsToPull = []
+	Global.cardsToPullQuantities = []
 	Global.cardsPulled = []
+	Global.cardsPulledQuantities = []
 	
 	item1Complete = false
 	item2Complete = false
@@ -128,7 +132,8 @@ func generateSQ():
 			$SQItems/SQItem4/Quantity.text = str(quantity)
 			$SQItems/SQItem4/SetIcon.texture = load(Global.cardToSetIconDict[cardName])
 		
-		Global.cardsToPull.append({ cardName: quantity })
+		Global.cardsToPullQuantities.append(quantity)
+		Global.cardsToPull.append(cardName)
 		totalQuantity += quantity
 	print(Global.cardsToPull)
 	
