@@ -1,9 +1,38 @@
-[gd_scene load_steps=5 format=3 uid="uid://bg1xrpjfwt311"]
+[gd_scene load_steps=34 format=3 uid="uid://bg1xrpjfwt311"]
 
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_0ti7u"]
 [ext_resource type="Script" path="res://Scripts/cabinet_view.gd" id="1_dn38j"]
-[ext_resource type="Texture2D" uid="uid://uifwubl0et6e" path="res://Assets/Art/E8AnkNmVcAMu8TH.jpg" id="2_nen64"]
+[ext_resource type="Texture2D" uid="uid://bwaxcx8hc3q3" path="res://icon.svg" id="2_78xdy"]
 [ext_resource type="Texture2D" uid="uid://b6c5qj5qplsnl" path="res://Assets/Art/OpenCabinet.png" id="2_v7g7v"]
+[ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="5_trxxf"]
+[ext_resource type="PackedScene" uid="uid://dtfljmvlp50qf" path="res://Scenes/cabinet_card.tscn" id="6_qky8g"]
+[ext_resource type="Texture2D" uid="uid://ydtarorbvogp" path="res://Assets/Art/Cards/Card_Bat.png" id="6_tjfx7"]
+[ext_resource type="Texture2D" uid="uid://cwxbdall4v7px" path="res://Assets/Art/Cards/Card_Candy_Bat.png" id="8_cbbdg"]
+[ext_resource type="Texture2D" uid="uid://dgbkthw7ba2u0" path="res://Assets/Art/Cards/Card_Candy_Ghost.png" id="9_8ok20"]
+[ext_resource type="Texture2D" uid="uid://cqn3361oka6ly" path="res://Assets/Art/Cards/Card_Candy_Pumkpin.png" id="10_6y6t6"]
+[ext_resource type="Texture2D" uid="uid://cgypapfbchjpn" path="res://Assets/Art/Cards/Card_Candy_Tree.png" id="11_lgruw"]
+[ext_resource type="Texture2D" uid="uid://bo3wdcg3bmp2m" path="res://Assets/Art/Cards/Card_Ghost.png" id="12_rr1j1"]
+[ext_resource type="Texture2D" uid="uid://fbx2jukuwons" path="res://Assets/Art/Cards/Card_Pumkpin.png" id="13_7ctsh"]
+[ext_resource type="Texture2D" uid="uid://dich8vxfe2krr" path="res://Assets/Art/Cards/Card_Snowflake_Bat.png" id="14_fvpnp"]
+[ext_resource type="Texture2D" uid="uid://d11wurqquw0c6" path="res://Assets/Art/Cards/Card_Snowflake_Ghost.png" id="15_lrph0"]
+[ext_resource type="Texture2D" uid="uid://cq5vu2boteerm" path="res://Assets/Art/Cards/Card_Snowflake_Pumkpin.png" id="16_3ev8n"]
+[ext_resource type="Texture2D" uid="uid://dqw0f3xlkw2xu" path="res://Assets/Art/Cards/Card_Snowflake_Tree.png" id="17_3bnqp"]
+[ext_resource type="Texture2D" uid="uid://d2gvp21fryh37" path="res://Assets/Art/Cards/Card_Tree.png" id="18_s5dsk"]
+[ext_resource type="Texture2D" uid="uid://b6fd6l2wow5o8" path="res://Assets/Art/Cards/Card_CandyCorn.png" id="19_f52rp"]
+[ext_resource type="Texture2D" uid="uid://b24cqmpi86kd5" path="res://Assets/Art/Cards/Card_Candy_CandyCorn.png" id="19_qqbnw"]
+[ext_resource type="Texture2D" uid="uid://dbjfpkgay2y4d" path="res://Assets/Art/Icons/Set_Shield.png" id="20_s5g36"]
+[ext_resource type="Texture2D" uid="uid://dd6ne75rswkh8" path="res://Assets/Art/Cards/Card_Candy_Scarecrow.png" id="21_5fi4c"]
+[ext_resource type="Texture2D" uid="uid://bjm1p8wicsk4i" path="res://Assets/Art/Cards/Card_Candy_Spider.png" id="22_n6mvw"]
+[ext_resource type="Texture2D" uid="uid://vrxv4h0pdo8" path="res://Assets/Art/Cards/Card_Candy_Witch.png" id="23_n2xrv"]
+[ext_resource type="Texture2D" uid="uid://33b8qywpubvu" path="res://Assets/Art/Cards/Card_Scarecrow.png" id="24_quy6l"]
+[ext_resource type="Texture2D" uid="uid://4m24ayyxie56" path="res://Assets/Art/Cards/Card_Snowflake_CandyCorn.png" id="25_ttxwh"]
+[ext_resource type="Texture2D" uid="uid://c5x4bpxmqnvf5" path="res://Assets/Art/Cards/Card_Snowflake_Scarecrow.png" id="26_pyv87"]
+[ext_resource type="Texture2D" uid="uid://qgpigkgeialn" path="res://Assets/Art/Cards/Card_Snowflake_Spider.png" id="27_3psh1"]
+[ext_resource type="Texture2D" uid="uid://dgahdytsr6amo" path="res://Assets/Art/Cards/Card_Snowflake_Witch.png" id="28_yn66k"]
+[ext_resource type="Texture2D" uid="uid://cy5ix58f7on4b" path="res://Assets/Art/Cards/Card_Spider.png" id="29_hrb6i"]
+[ext_resource type="Texture2D" uid="uid://d126j3x57yk0l" path="res://Assets/Art/Cards/Card_Witch.png" id="30_anxu6"]
+[ext_resource type="Texture2D" uid="uid://qbpbpoupd7e7" path="res://Assets/Art/Icons/Set_Staff.png" id="31_stxae"]
+[ext_resource type="Texture2D" uid="uid://tlhiaal4n5cx" path="res://Assets/Art/Icons/Set_Sword.png" id="32_tia5c"]
 
 [node name="CabinetView" type="Control"]
 layout_mode = 3
@@ -13,6 +42,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_dn38j")
+setIcon = ExtResource("2_78xdy")
 
 [node name="ViewOverlay" type="ColorRect" parent="."]
 layout_mode = 0
@@ -28,7 +58,7 @@ offset_right = 1724.0
 offset_bottom = 1030.0
 color = Color(0.775474, 0.828803, 0.930598, 1)
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="CabinetImage" type="Sprite2D" parent="."]
 position = Vector2(947, 595)
 scale = Vector2(0.8, 0.8)
 texture = ExtResource("2_v7g7v")
@@ -46,8 +76,8 @@ horizontal_alignment = 1
 
 [node name="CabinetSetIcon" type="Sprite2D" parent="."]
 position = Vector2(899, 218)
-scale = Vector2(0.161133, 0.161133)
-texture = ExtResource("2_nen64")
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("5_trxxf")
 
 [node name="CloseButton" type="Button" parent="."]
 layout_mode = 0
@@ -58,5 +88,449 @@ offset_bottom = 147.0
 theme_override_fonts/font = ExtResource("1_0ti7u")
 theme_override_font_sizes/font_size = 64
 text = "Close"
+
+[node name="BowCards" type="Node2D" parent="."]
+visible = false
+
+[node name="Bow_Card1" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 272.0
+offset_right = 384.0
+offset_bottom = 272.0
+card = ExtResource("6_tjfx7")
+setIcon = ExtResource("5_trxxf")
+cardName = "Bat"
+
+[node name="Bow_Card2" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 272.0
+offset_right = 672.0
+offset_bottom = 272.0
+card = ExtResource("8_cbbdg")
+setIcon = ExtResource("5_trxxf")
+cardName = "Candy Bat"
+
+[node name="Bow_Card3" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 272.0
+offset_right = 968.0
+offset_bottom = 272.0
+card = ExtResource("9_8ok20")
+setIcon = ExtResource("5_trxxf")
+cardName = "Candy Ghost"
+
+[node name="Bow_Card4" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 272.0
+offset_right = 1264.0
+offset_bottom = 272.0
+card = ExtResource("10_6y6t6")
+setIcon = ExtResource("5_trxxf")
+cardName = "Candy Pumpkin"
+
+[node name="Bow_Card5" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 528.0
+offset_right = 384.0
+offset_bottom = 528.0
+card = ExtResource("11_lgruw")
+setIcon = ExtResource("5_trxxf")
+cardName = "Candy Tree"
+
+[node name="Bow_Card6" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 528.0
+offset_right = 672.0
+offset_bottom = 528.0
+card = ExtResource("12_rr1j1")
+setIcon = ExtResource("5_trxxf")
+cardName = "Ghost"
+
+[node name="Bow_Card7" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 528.0
+offset_right = 968.0
+offset_bottom = 528.0
+card = ExtResource("13_7ctsh")
+setIcon = ExtResource("5_trxxf")
+cardName = "Pumpkin"
+
+[node name="Bow_Card8" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 528.0
+offset_right = 1264.0
+offset_bottom = 528.0
+card = ExtResource("14_fvpnp")
+setIcon = ExtResource("5_trxxf")
+cardName = "Snowflake Bat"
+
+[node name="Bow_Card9" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 784.0
+offset_right = 384.0
+offset_bottom = 784.0
+card = ExtResource("15_lrph0")
+setIcon = ExtResource("5_trxxf")
+cardName = "Snowflake Ghost"
+
+[node name="Bow_Card10" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 784.0
+offset_right = 672.0
+offset_bottom = 784.0
+card = ExtResource("16_3ev8n")
+setIcon = ExtResource("5_trxxf")
+cardName = "Snowflake Pumpkin"
+
+[node name="Bow_Card11" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 784.0
+offset_right = 968.0
+offset_bottom = 784.0
+card = ExtResource("17_3bnqp")
+setIcon = ExtResource("5_trxxf")
+cardName = "Snowflake Tree"
+
+[node name="Bow_Card12" parent="BowCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 784.0
+offset_right = 1264.0
+offset_bottom = 784.0
+card = ExtResource("18_s5dsk")
+setIcon = ExtResource("5_trxxf")
+cardName = "Tree"
+
+[node name="ShieldCards" type="Node2D" parent="."]
+visible = false
+
+[node name="Shield_Card1" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 272.0
+offset_right = 384.0
+offset_bottom = 272.0
+card = ExtResource("19_qqbnw")
+setIcon = ExtResource("20_s5g36")
+cardName = "Candy Candy Corn"
+
+[node name="Shield_Card2" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 272.0
+offset_right = 672.0
+offset_bottom = 272.0
+card = ExtResource("19_f52rp")
+setIcon = ExtResource("20_s5g36")
+cardName = "Candy Corn"
+
+[node name="Shield_Card3" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 272.0
+offset_right = 968.0
+offset_bottom = 272.0
+card = ExtResource("21_5fi4c")
+setIcon = ExtResource("20_s5g36")
+cardName = "Candy Scarecrow"
+
+[node name="Shield_Card4" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 272.0
+offset_right = 1264.0
+offset_bottom = 272.0
+card = ExtResource("22_n6mvw")
+setIcon = ExtResource("20_s5g36")
+cardName = "Candy Spider"
+
+[node name="Shield_Card5" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 528.0
+offset_right = 384.0
+offset_bottom = 528.0
+card = ExtResource("23_n2xrv")
+setIcon = ExtResource("20_s5g36")
+cardName = "Candy Witch"
+
+[node name="Shield_Card6" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 528.0
+offset_right = 672.0
+offset_bottom = 528.0
+card = ExtResource("24_quy6l")
+setIcon = ExtResource("20_s5g36")
+cardName = "Scarecrow"
+
+[node name="Shield_Card7" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 528.0
+offset_right = 968.0
+offset_bottom = 528.0
+card = ExtResource("25_ttxwh")
+setIcon = ExtResource("20_s5g36")
+cardName = "Snowflake Candy Corn"
+
+[node name="Shield_Card8" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 528.0
+offset_right = 1264.0
+offset_bottom = 528.0
+card = ExtResource("26_pyv87")
+setIcon = ExtResource("20_s5g36")
+cardName = "Snowflake Scarecrow"
+
+[node name="Shield_Card9" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 784.0
+offset_right = 384.0
+offset_bottom = 784.0
+card = ExtResource("27_3psh1")
+setIcon = ExtResource("20_s5g36")
+cardName = "Snowflake Spider"
+
+[node name="Shield_Card10" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 784.0
+offset_right = 672.0
+offset_bottom = 784.0
+card = ExtResource("28_yn66k")
+setIcon = ExtResource("20_s5g36")
+cardName = "Snowflake Witch"
+
+[node name="Shield_Card11" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 784.0
+offset_right = 968.0
+offset_bottom = 784.0
+card = ExtResource("29_hrb6i")
+setIcon = ExtResource("20_s5g36")
+cardName = "Spider"
+
+[node name="Shield_Card12" parent="ShieldCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 784.0
+offset_right = 1264.0
+offset_bottom = 784.0
+card = ExtResource("30_anxu6")
+setIcon = ExtResource("20_s5g36")
+cardName = "Witch"
+
+[node name="StaffCards" type="Node2D" parent="."]
+visible = false
+
+[node name="Staff_Card1" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 272.0
+offset_right = 384.0
+offset_bottom = 272.0
+card = ExtResource("6_tjfx7")
+setIcon = ExtResource("31_stxae")
+cardName = "Bat"
+
+[node name="Staff_Card2" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 272.0
+offset_right = 672.0
+offset_bottom = 272.0
+card = ExtResource("8_cbbdg")
+setIcon = ExtResource("31_stxae")
+cardName = "Candy Bat"
+
+[node name="Staff_Card3" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 272.0
+offset_right = 968.0
+offset_bottom = 272.0
+card = ExtResource("9_8ok20")
+setIcon = ExtResource("31_stxae")
+cardName = "Candy Ghost"
+
+[node name="Staff_Card4" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 272.0
+offset_right = 1264.0
+offset_bottom = 272.0
+card = ExtResource("10_6y6t6")
+setIcon = ExtResource("31_stxae")
+cardName = "Candy Pumpkin"
+
+[node name="Staff_Card5" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 528.0
+offset_right = 384.0
+offset_bottom = 528.0
+card = ExtResource("11_lgruw")
+setIcon = ExtResource("31_stxae")
+cardName = "Candy Tree"
+
+[node name="Staff_Card6" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 528.0
+offset_right = 672.0
+offset_bottom = 528.0
+card = ExtResource("12_rr1j1")
+setIcon = ExtResource("31_stxae")
+cardName = "Ghost"
+
+[node name="Staff_Card7" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 528.0
+offset_right = 968.0
+offset_bottom = 528.0
+card = ExtResource("13_7ctsh")
+setIcon = ExtResource("31_stxae")
+cardName = "Pumpkin"
+
+[node name="Staff_Card8" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 528.0
+offset_right = 1264.0
+offset_bottom = 528.0
+card = ExtResource("14_fvpnp")
+setIcon = ExtResource("31_stxae")
+cardName = "Snowflake Bat"
+
+[node name="Staff_Card9" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 784.0
+offset_right = 384.0
+offset_bottom = 784.0
+card = ExtResource("15_lrph0")
+setIcon = ExtResource("31_stxae")
+cardName = "Snowflake Ghost"
+
+[node name="Staff_Card10" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 784.0
+offset_right = 672.0
+offset_bottom = 784.0
+card = ExtResource("16_3ev8n")
+setIcon = ExtResource("31_stxae")
+cardName = "Snowflake Pumpkin"
+
+[node name="Staff_Card11" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 784.0
+offset_right = 968.0
+offset_bottom = 784.0
+card = ExtResource("17_3bnqp")
+setIcon = ExtResource("31_stxae")
+cardName = "Snowflake Tree"
+
+[node name="Staff_Card12" parent="StaffCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 784.0
+offset_right = 1264.0
+offset_bottom = 784.0
+card = ExtResource("18_s5dsk")
+setIcon = ExtResource("31_stxae")
+cardName = "Tree"
+
+[node name="SwordCards" type="Node2D" parent="."]
+visible = false
+
+[node name="Sword_Card1" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 272.0
+offset_right = 384.0
+offset_bottom = 272.0
+card = ExtResource("6_tjfx7")
+setIcon = ExtResource("32_tia5c")
+cardName = "Bat"
+
+[node name="Sword_Card2" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 272.0
+offset_right = 672.0
+offset_bottom = 272.0
+card = ExtResource("8_cbbdg")
+setIcon = ExtResource("32_tia5c")
+cardName = "Candy Bat"
+
+[node name="Sword_Card3" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 272.0
+offset_right = 968.0
+offset_bottom = 272.0
+card = ExtResource("9_8ok20")
+setIcon = ExtResource("32_tia5c")
+cardName = "Candy Ghost"
+
+[node name="Sword_Card4" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 272.0
+offset_right = 1264.0
+offset_bottom = 272.0
+card = ExtResource("10_6y6t6")
+setIcon = ExtResource("32_tia5c")
+cardName = "Candy Pumpkin"
+
+[node name="Sword_Card5" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 528.0
+offset_right = 384.0
+offset_bottom = 528.0
+card = ExtResource("11_lgruw")
+setIcon = ExtResource("32_tia5c")
+cardName = "Candy Tree"
+
+[node name="Sword_Card6" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 528.0
+offset_right = 672.0
+offset_bottom = 528.0
+card = ExtResource("12_rr1j1")
+setIcon = ExtResource("32_tia5c")
+cardName = "Ghost"
+
+[node name="Sword_Card7" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 528.0
+offset_right = 968.0
+offset_bottom = 528.0
+card = ExtResource("13_7ctsh")
+setIcon = ExtResource("32_tia5c")
+cardName = "Pumpkin"
+
+[node name="Sword_Card8" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 528.0
+offset_right = 1264.0
+offset_bottom = 528.0
+card = ExtResource("14_fvpnp")
+setIcon = ExtResource("32_tia5c")
+cardName = "Snowflake Bat"
+
+[node name="Sword_Card9" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 384.0
+offset_top = 784.0
+offset_right = 384.0
+offset_bottom = 784.0
+card = ExtResource("15_lrph0")
+setIcon = ExtResource("32_tia5c")
+cardName = "Snowflake Ghost"
+
+[node name="Sword_Card10" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 672.0
+offset_top = 784.0
+offset_right = 672.0
+offset_bottom = 784.0
+card = ExtResource("16_3ev8n")
+setIcon = ExtResource("32_tia5c")
+cardName = "Snowflake Pumpkin"
+
+[node name="Sword_Card11" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 968.0
+offset_top = 784.0
+offset_right = 968.0
+offset_bottom = 784.0
+card = ExtResource("17_3bnqp")
+setIcon = ExtResource("32_tia5c")
+cardName = "Snowflake Tree"
+
+[node name="Sword_Card12" parent="SwordCards" instance=ExtResource("6_qky8g")]
+offset_left = 1264.0
+offset_top = 784.0
+offset_right = 1264.0
+offset_bottom = 784.0
+card = ExtResource("18_s5dsk")
+setIcon = ExtResource("32_tia5c")
+cardName = "Tree"
 
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]

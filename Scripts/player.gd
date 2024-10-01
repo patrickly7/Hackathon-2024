@@ -1,12 +1,13 @@
 extends Area2D
 
-signal open_cabinet
+signal open_cabinet(num: int)
 signal ship_package
 
 @export var speed = 400 # How fast the player will move (pixels/sec).
 var screen_size # Size of the game window.
 
 var touchingCabinet = false
+var currentCabinet = 1
 var touchingShippingStation = false
 
 # Called when the node enters the scene tree for the first time.
@@ -31,7 +32,7 @@ func _process(delta):
 		$SpeechBubbleLabel.hide()
 	
 	if Input.is_action_pressed("action") and touchingCabinet:
-		open_cabinet.emit()
+		open_cabinet.emit(currentCabinet)
 		return
 	
 	var velocity = Vector2.ZERO # The player's movement vector.
@@ -69,12 +70,16 @@ func _on_body_entered(body):
 	if body.is_in_group("cabinet"):
 		touchingCabinet = true
 		if body.get_name() == "Cabinet1":
+			currentCabinet = 1
 			print('WHOA! CABINET 1!')
 		elif body.get_name() == "Cabinet2":
+			currentCabinet = 2
 			print('WHOA! CABINET 2!')
 		elif body.get_name() == "Cabinet3":
+			currentCabinet = 3
 			print('WHOA! CABINET 3!')
 		else: # Cabinet4
+			currentCabinet = 4
 			print('WHOA! CABINET 4!')
 
 	elif body.is_in_group("shipping_station"):
