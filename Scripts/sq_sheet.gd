@@ -10,6 +10,8 @@ var item2Complete = false
 var item3Complete = false
 var item4Complete = false
 
+var isHidden = false
+
 func _ready():
 	rng.randomize()
 	generateSQ()
@@ -59,7 +61,8 @@ func _process(delta):
 		
 	# Stamp SQ with Completion Stamp
 	if isComplete:
-		$CompleteStamp.show()
+		if !isHidden:
+			$CompleteStamp.show()
 	else:
 		$CompleteStamp.hide()
 
@@ -146,6 +149,8 @@ func generateSQ():
 	$Weight.text = str(weight) + " oz"
 
 func _on_hide_button_pressed():
+	isHidden = true
+	
 	$ShowButton.show()
 	$HideButton.hide()
 		
@@ -156,6 +161,8 @@ func _on_hide_button_pressed():
 	$CompleteStamp.hide()
 
 func _on_show_button_pressed():
+	isHidden = false
+	
 	$HideButton.show()
 	$ShowButton.hide()
 		

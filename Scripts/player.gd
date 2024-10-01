@@ -32,7 +32,7 @@ func _process(delta):
 		$SpeechBubble.hide()
 		$SpeechBubbleLabel.hide()
 	
-	if Input.is_action_pressed("action") and touchingCabinet:
+	if Input.is_action_just_pressed("action") and touchingCabinet:
 		open_cabinet.emit(currentCabinet)
 		return
 		
