@@ -42,6 +42,119 @@ text = "0.3 oz"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="SQItems" type="Node2D" parent="."]
+
+[node name="SQItem1" type="Node2D" parent="SQItems"]
+
+[node name="Quantity" type="Label" parent="SQItems/SQItem1"]
+offset_left = -232.0
+offset_top = -144.0
+offset_right = -205.0
+offset_bottom = -112.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4qbwk")
+theme_override_font_sizes/font_size = 36
+text = "3"
+
+[node name="CardName" type="Label" parent="SQItems/SQItem1"]
+offset_left = -192.0
+offset_top = -136.0
+offset_right = 138.0
+offset_bottom = -104.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4qbwk")
+theme_override_font_sizes/font_size = 24
+text = "Snowflake Candy Corn"
+
+[node name="SetIcon" type="Sprite2D" parent="SQItems/SQItem1"]
+position = Vector2(131, -123)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_nhrbk")
+
+[node name="SQItem2" type="Node2D" parent="SQItems"]
+position = Vector2(0, 75)
+
+[node name="Quantity" type="Label" parent="SQItems/SQItem2"]
+offset_left = -232.0
+offset_top = -144.0
+offset_right = -205.0
+offset_bottom = -112.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4qbwk")
+theme_override_font_sizes/font_size = 36
+text = "3"
+
+[node name="CardName" type="Label" parent="SQItems/SQItem2"]
+offset_left = -192.0
+offset_top = -136.0
+offset_right = 138.0
+offset_bottom = -104.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4qbwk")
+theme_override_font_sizes/font_size = 24
+text = "Snowflake Candy Corn"
+
+[node name="SetIcon" type="Sprite2D" parent="SQItems/SQItem2"]
+position = Vector2(131, -123)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_nhrbk")
+
+[node name="SQItem3" type="Node2D" parent="SQItems"]
+position = Vector2(0, 150)
+
+[node name="Quantity" type="Label" parent="SQItems/SQItem3"]
+offset_left = -232.0
+offset_top = -144.0
+offset_right = -205.0
+offset_bottom = -112.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4qbwk")
+theme_override_font_sizes/font_size = 36
+text = "3"
+
+[node name="CardName" type="Label" parent="SQItems/SQItem3"]
+offset_left = -192.0
+offset_top = -136.0
+offset_right = 138.0
+offset_bottom = -104.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4qbwk")
+theme_override_font_sizes/font_size = 24
+text = "Snowflake Candy Corn"
+
+[node name="SetIcon" type="Sprite2D" parent="SQItems/SQItem3"]
+position = Vector2(131, -123)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_nhrbk")
+
+[node name="SQItem4" type="Node2D" parent="SQItems"]
+position = Vector2(0, 225)
+
+[node name="Quantity" type="Label" parent="SQItems/SQItem4"]
+offset_left = -232.0
+offset_top = -144.0
+offset_right = -205.0
+offset_bottom = -112.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4qbwk")
+theme_override_font_sizes/font_size = 36
+text = "3"
+
+[node name="CardName" type="Label" parent="SQItems/SQItem4"]
+offset_left = -192.0
+offset_top = -136.0
+offset_right = 138.0
+offset_bottom = -104.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4qbwk")
+theme_override_font_sizes/font_size = 24
+text = "Snowflake Candy Corn"
+
+[node name="SetIcon" type="Sprite2D" parent="SQItems/SQItem4"]
+position = Vector2(131, -123)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_nhrbk")
+
 [node name="CompleteStamp" type="Sprite2D" parent="."]
 visible = false
 position = Vector2(152, -184)
