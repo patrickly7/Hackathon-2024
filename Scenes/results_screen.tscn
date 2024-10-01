@@ -15,20 +15,20 @@ script = ExtResource("1_0kxqi")
 [node name="Title" type="Label" parent="."]
 layout_mode = 0
 offset_left = 3.0
-offset_top = 191.0
+offset_top = 81.0
 offset_right = 1923.0
-offset_bottom = 366.0
+offset_bottom = 256.0
 theme_override_fonts/font = ExtResource("1_h6jqq")
 theme_override_font_sizes/font_size = 128
-text = "RESULTS HERE"
+text = "RESULTS"
 horizontal_alignment = 1
 
 [node name="CorrectCardsPulled" type="Label" parent="."]
 layout_mode = 0
-offset_left = 76.0
-offset_top = 382.0
-offset_right = 1083.0
-offset_bottom = 470.0
+offset_left = 42.0
+offset_top = 298.0
+offset_right = 1049.0
+offset_bottom = 386.0
 theme_override_fonts/font = ExtResource("1_h6jqq")
 theme_override_font_sizes/font_size = 64
 text = "Correct Cards Pulled"
@@ -36,10 +36,10 @@ horizontal_alignment = 1
 
 [node name="IncorrectCardsPulled" type="Label" parent="."]
 layout_mode = 0
-offset_left = 76.0
-offset_top = 461.0
-offset_right = 1083.0
-offset_bottom = 549.0
+offset_left = 42.0
+offset_top = 377.0
+offset_right = 1049.0
+offset_bottom = 465.0
 theme_override_fonts/font = ExtResource("1_h6jqq")
 theme_override_font_sizes/font_size = 64
 text = "Incorrect Cards Pulled"
@@ -47,10 +47,10 @@ horizontal_alignment = 1
 
 [node name="SQsCompleted" type="Label" parent="."]
 layout_mode = 0
-offset_left = 76.0
-offset_top = 546.0
-offset_right = 1083.0
-offset_bottom = 634.0
+offset_left = 42.0
+offset_top = 462.0
+offset_right = 1049.0
+offset_bottom = 550.0
 theme_override_fonts/font = ExtResource("1_h6jqq")
 theme_override_font_sizes/font_size = 64
 text = "SQ's Completed Here"
@@ -58,10 +58,10 @@ horizontal_alignment = 1
 
 [node name="TimesWrongShippingUsed" type="Label" parent="."]
 layout_mode = 0
-offset_left = 76.0
-offset_top = 625.0
-offset_right = 1083.0
-offset_bottom = 713.0
+offset_left = 42.0
+offset_top = 541.0
+offset_right = 1049.0
+offset_bottom = 629.0
 theme_override_fonts/font = ExtResource("1_h6jqq")
 theme_override_font_sizes/font_size = 64
 text = "Times Wrong Shipping Used"
@@ -69,20 +69,20 @@ horizontal_alignment = 1
 
 [node name="PlayAgainButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1232.0
-offset_top = 574.0
-offset_right = 1716.0
-offset_bottom = 698.0
+offset_left = 744.0
+offset_top = 745.0
+offset_right = 1228.0
+offset_bottom = 869.0
 theme_override_fonts/font = ExtResource("1_h6jqq")
 theme_override_font_sizes/font_size = 64
 text = "Play Again"
 
 [node name="QuitButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 1234.0
-offset_top = 729.0
-offset_right = 1712.0
-offset_bottom = 851.0
+offset_left = 748.0
+offset_top = 893.0
+offset_right = 1226.0
+offset_bottom = 1015.0
 theme_override_fonts/font = ExtResource("1_h6jqq")
 theme_override_font_sizes/font_size = 64
 text = "Quit"
