@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://kqmkdpt7mlw4"]
+[gd_scene load_steps=5 format=3 uid="uid://kqmkdpt7mlw4"]
 
 [ext_resource type="Texture2D" uid="uid://dxwxnx7pqbjhh" path="res://Assets/Art/SqSheet.png" id="1_8q8h3"]
 [ext_resource type="Script" path="res://Scripts/sq_sheet.gd" id="1_s8lbn"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="2_4qbwk"]
+[ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="4_nhrbk"]
 
 [node name="SQSheet" type="Control"]
 layout_mode = 3
@@ -27,6 +28,25 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("2_4qbwk")
 theme_override_font_sizes/font_size = 48
 text = "SQ-123456"
+
+[node name="Weight" type="Label" parent="."]
+layout_mode = 0
+offset_left = -112.0
+offset_top = 176.0
+offset_right = 96.0
+offset_bottom = 248.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4qbwk")
+theme_override_font_sizes/font_size = 40
+text = "0.3 oz"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CompleteStamp" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(152, -184)
+scale = Vector2(0.65, 0.65)
+texture = ExtResource("4_nhrbk")
 
 [node name="HideButton" type="Button" parent="."]
 layout_mode = 0

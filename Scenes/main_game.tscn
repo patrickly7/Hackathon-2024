@@ -1,14 +1,15 @@
-[gd_scene load_steps=16 format=3 uid="uid://2qrnnjfd26oc"]
+[gd_scene load_steps=17 format=3 uid="uid://2qrnnjfd26oc"]
 
 [ext_resource type="Script" path="res://Scripts/main_game.gd" id="1_bf2dl"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_m6rd2"]
 [ext_resource type="PackedScene" uid="uid://cqgrlms77vnu3" path="res://Scenes/player.tscn" id="2_qawf6"]
 [ext_resource type="PackedScene" uid="uid://de1r0bx54exk2" path="res://Scenes/pause_menu.tscn" id="4_2h1lt"]
 [ext_resource type="PackedScene" uid="uid://dqy1037b3h5uq" path="res://Scenes/help_menu.tscn" id="5_iq3vo"]
+[ext_resource type="Texture2D" uid="uid://r3wspcuenxn3" path="res://Assets/Art/Icons/Shipping_Envelope.png" id="6_gdhfv"]
 [ext_resource type="PackedScene" uid="uid://bg1xrpjfwt311" path="res://Scenes/cabinet_view.tscn" id="6_lugco"]
 [ext_resource type="PackedScene" uid="uid://g1ry4j0al1q8" path="res://Scenes/shipping_station.tscn" id="7_2uex1"]
-[ext_resource type="Texture2D" uid="uid://dvnupaug5ft8e" path="res://Assets/Art/Icons/Graybox_BubbleMailer.png" id="8_agakp"]
-[ext_resource type="Texture2D" uid="uid://7su2pkquhwok" path="res://Assets/Art/Icons/Graybox_Package.png" id="9_ex2gj"]
+[ext_resource type="Texture2D" uid="uid://bn7m5dg50obyh" path="res://Assets/Art/Icons/Shipping_BubbleMailer.png" id="7_s3x42"]
+[ext_resource type="Texture2D" uid="uid://cm7k38othvpi" path="res://Assets/Art/Icons/Shipping_Package.png" id="8_nfy0v"]
 [ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="9_y754s"]
 [ext_resource type="PackedScene" uid="uid://dyr8qd11despu" path="res://Scenes/cabinet.tscn" id="10_0l61s"]
 [ext_resource type="Texture2D" uid="uid://dbjfpkgay2y4d" path="res://Assets/Art/Icons/Set_Shield.png" id="10_qfdby"]
@@ -65,14 +66,15 @@ speed = 1000
 
 [node name="EnvelopeStation" parent="." instance=ExtResource("7_2uex1")]
 position = Vector2(312, 920)
+packageType = ExtResource("6_gdhfv")
 
 [node name="BubbleMailerStation" parent="." instance=ExtResource("7_2uex1")]
 position = Vector2(960, 920)
-packageType = ExtResource("8_agakp")
+packageType = ExtResource("7_s3x42")
 
 [node name="BoxStation" parent="." instance=ExtResource("7_2uex1")]
 position = Vector2(1616, 920)
-packageType = ExtResource("9_ex2gj")
+packageType = ExtResource("8_nfy0v")
 
 [node name="Timer" type="Timer" parent="."]
 
