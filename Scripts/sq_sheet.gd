@@ -113,6 +113,9 @@ func generateSQ():
 	# Fetch the SKUs and Generate Quantities for them
 	for i in range(numSkus):
 		var cardName = Global.possibleCards[randi() % possibleCardsLen]
+		while Global.cardsToPull.has(cardName):
+			cardName = Global.possibleCards[randi() % possibleCardsLen]
+		
 		var quantity = rng.randi_range(1, 3)
 		
 		if i == 0:

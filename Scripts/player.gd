@@ -36,26 +36,30 @@ func _process(delta):
 		open_cabinet.emit(currentCabinet)
 		return
 		
-	if Input.is_action_pressed("action") and touchingShippingStation and Global.currentSQComplete:
-		Global.sqsCompleted += 1
+	if Input.is_action_just_pressed("action") and touchingShippingStation and Global.currentSQComplete:
 		if Global.currentSQWeight > 0 and Global.currentSQWeight < 1:
 			if currentStation == "Envelope":
 				Global.currentSQ = ""
 			else:
 				Global.wrongShippingUsed += 1
 				print("NO ENVELOPE! THIS IS THE WRONG SHIPPING STATION!")
+				return
 		elif Global.currentSQWeight >= 1 and Global.currentSQWeight < 2:
 			if currentStation == "BubbleMailer":
 				Global.currentSQ = ""
 			else:
 				Global.wrongShippingUsed += 1
 				print("NO BUBBLE MAILER! THIS IS THE WRONG SHIPPING STATION!")
+				return
 		else: # Greater than or equal to 2 oz
 			if currentStation == "Box":
 				Global.currentSQ = ""
 			else:
 				Global.wrongShippingUsed += 1
 				print("NO BOX! THIS IS THE WRONG SHIPPING STATION!")
+				return
+		
+		Global.sqsCompleted += 1
 		return
 	
 	var velocity = Vector2.ZERO # The player's movement vector.
