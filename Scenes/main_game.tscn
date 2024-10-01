@@ -43,12 +43,6 @@ text = "Pause"
 [node name="StartPosition" type="Marker2D" parent="."]
 position = Vector2(960, 540)
 
-[node name="PauseMenu" parent="." instance=ExtResource("4_2h1lt")]
-visible = false
-
-[node name="HelpMenu" parent="." instance=ExtResource("5_iq3vo")]
-visible = false
-
 [node name="Cabinet1" parent="." instance=ExtResource("10_0l61s")]
 position = Vector2(304, 220)
 
@@ -104,16 +98,23 @@ one_shot = true
 visible = false
 
 [node name="SQSheet" parent="." instance=ExtResource("11_a8i3j")]
-offset_left = 1656.0
-offset_top = 552.0
-offset_right = 1656.0
-offset_bottom = 552.0
+visible = false
+offset_left = 1663.0
+offset_top = 561.0
+offset_right = 1663.0
+offset_bottom = 561.0
+
+[node name="PauseMenu" parent="." instance=ExtResource("4_2h1lt")]
+visible = false
+
+[node name="HelpMenu" parent="." instance=ExtResource("5_iq3vo")]
+visible = false
 
 [connection signal="pressed" from="HelpButton" to="." method="_on_help_button_pressed"]
 [connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
-[connection signal="hidden" from="PauseMenu" to="." method="_on_pause_menu_hidden"]
-[connection signal="hidden" from="HelpMenu" to="." method="_on_help_menu_hidden"]
 [connection signal="open_cabinet" from="Player" to="." method="_on_player_open_cabinet"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="StartTimer" to="." method="_on_start_timer_timeout"]
 [connection signal="hidden" from="CabinetView" to="." method="_on_cabinet_view_hidden"]
+[connection signal="hidden" from="PauseMenu" to="." method="_on_pause_menu_hidden"]
+[connection signal="hidden" from="HelpMenu" to="." method="_on_help_menu_hidden"]

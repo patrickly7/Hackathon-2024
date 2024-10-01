@@ -18,6 +18,18 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if touchingCabinet:
+		$SpeechBubble.show()
+		$SpeechBubbleLabel.show()
+		$SpeechBubbleLabel.text = "PULL!"
+	elif touchingShippingStation:
+		$SpeechBubble.show()
+		$SpeechBubbleLabel.show()
+		$SpeechBubbleLabel.text = "SHIP!"
+	else:
+		$SpeechBubble.hide()
+		$SpeechBubbleLabel.hide()
+	
 	if Input.is_action_pressed("action") and touchingCabinet:
 		open_cabinet.emit()
 		return
@@ -55,14 +67,22 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if body.is_in_group("cabinet"):
-		print('WHOA! A CABINET!')
 		touchingCabinet = true
+		if body.get_name() == "Cabinet1":
+			print('WHOA! CABINET 1!')
+		elif body.get_name() == "Cabinet2":
+			print('WHOA! CABINET 2!')
+		elif body.get_name() == "Cabinet3":
+			print('WHOA! CABINET 3!')
+		else: # Cabinet4
+			print('WHOA! CABINET 4!')
+
 	elif body.is_in_group("shipping_station"):
 		print('WHOA! A SHIPPING STATION!')
 		touchingShippingStation = true
 	
 func _on_body_exited(body):
-	print('BYE BODY')
+	print('BYE BODY - ' + body.get_name())
 	touchingCabinet = false
 	touchingShippingStation = false
 	

@@ -24,6 +24,7 @@ func new_game():
 	update_time(timer)
 	update_message("Start!")
 	
+	$SQSheet.show()
 	show_buttons()
 
 func _on_start_timer_timeout():
@@ -89,9 +90,11 @@ func show_stations():
 	$BoxStation.show()
 
 func _on_cabinet_view_hidden():
+	# TBD - add a way to unfreeze player when closing cabinet
 	show_buttons()
 
 
 func _on_player_open_cabinet():
+	# TBD - add a way to freeze player when opening cabinet
 	$CabinetView.show()
 	hide_buttons()
