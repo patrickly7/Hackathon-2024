@@ -91,6 +91,9 @@ func _on_hide_button_pressed():
 		
 	$SQSheetImage.hide()
 	$SQNumber.hide()
+	$SQItems.hide()
+	$Weight.hide()
+	$CompleteStamp.hide()
 
 func _on_show_button_pressed():
 	$HideButton.show()
@@ -98,3 +101,6 @@ func _on_show_button_pressed():
 		
 	$SQSheetImage.show()
 	$SQNumber.show()
+	$SQItems.show()
+	$Weight.show()
+	$CompleteStamp.show()
