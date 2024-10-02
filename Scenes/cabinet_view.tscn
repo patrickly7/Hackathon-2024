@@ -120,82 +120,82 @@ setIcon = ExtResource("5_trxxf")
 cardName = "Candy Ghost"
 
 [node name="Bow_Card4" parent="BowCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
+offset_left = 1256.0
 offset_top = 272.0
-offset_right = 1264.0
+offset_right = 1256.0
 offset_bottom = 272.0
 card = ExtResource("10_6y6t6")
 setIcon = ExtResource("5_trxxf")
 cardName = "Candy Pumpkin"
 
 [node name="Bow_Card5" parent="BowCards" instance=ExtResource("6_qky8g")]
-offset_left = 384.0
+offset_left = 376.0
 offset_top = 528.0
-offset_right = 384.0
+offset_right = 376.0
 offset_bottom = 528.0
 card = ExtResource("11_lgruw")
 setIcon = ExtResource("5_trxxf")
 cardName = "Candy Tree"
 
 [node name="Bow_Card6" parent="BowCards" instance=ExtResource("6_qky8g")]
-offset_left = 672.0
+offset_left = 664.0
 offset_top = 528.0
-offset_right = 672.0
+offset_right = 664.0
 offset_bottom = 528.0
 card = ExtResource("12_rr1j1")
 setIcon = ExtResource("5_trxxf")
 cardName = "Ghost"
 
 [node name="Bow_Card7" parent="BowCards" instance=ExtResource("6_qky8g")]
-offset_left = 968.0
+offset_left = 952.0
 offset_top = 528.0
-offset_right = 968.0
+offset_right = 952.0
 offset_bottom = 528.0
 card = ExtResource("13_7ctsh")
 setIcon = ExtResource("5_trxxf")
 cardName = "Pumpkin"
 
 [node name="Bow_Card8" parent="BowCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
+offset_left = 1248.0
 offset_top = 528.0
-offset_right = 1264.0
+offset_right = 1248.0
 offset_bottom = 528.0
 card = ExtResource("14_fvpnp")
 setIcon = ExtResource("5_trxxf")
 cardName = "Snowflake Bat"
 
 [node name="Bow_Card9" parent="BowCards" instance=ExtResource("6_qky8g")]
-offset_left = 384.0
-offset_top = 784.0
-offset_right = 384.0
-offset_bottom = 784.0
+offset_left = 368.0
+offset_top = 792.0
+offset_right = 368.0
+offset_bottom = 792.0
 card = ExtResource("15_lrph0")
 setIcon = ExtResource("5_trxxf")
 cardName = "Snowflake Ghost"
 
 [node name="Bow_Card10" parent="BowCards" instance=ExtResource("6_qky8g")]
-offset_left = 672.0
-offset_top = 784.0
-offset_right = 672.0
-offset_bottom = 784.0
+offset_left = 656.0
+offset_top = 792.0
+offset_right = 656.0
+offset_bottom = 792.0
 card = ExtResource("16_3ev8n")
 setIcon = ExtResource("5_trxxf")
 cardName = "Snowflake Pumpkin"
 
 [node name="Bow_Card11" parent="BowCards" instance=ExtResource("6_qky8g")]
-offset_left = 968.0
-offset_top = 784.0
-offset_right = 968.0
-offset_bottom = 784.0
+offset_left = 944.0
+offset_top = 792.0
+offset_right = 944.0
+offset_bottom = 792.0
 card = ExtResource("17_3bnqp")
 setIcon = ExtResource("5_trxxf")
 cardName = "Snowflake Tree"
 
 [node name="Bow_Card12" parent="BowCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
-offset_top = 784.0
-offset_right = 1264.0
-offset_bottom = 784.0
+offset_left = 1232.0
+offset_top = 792.0
+offset_right = 1232.0
+offset_bottom = 792.0
 card = ExtResource("18_s5dsk")
 setIcon = ExtResource("5_trxxf")
 cardName = "Tree"
@@ -231,81 +231,81 @@ setIcon = ExtResource("20_s5g36")
 cardName = "Candy Scarecrow"
 
 [node name="Shield_Card4" parent="ShieldCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
+offset_left = 1256.0
 offset_top = 272.0
-offset_right = 1264.0
+offset_right = 1256.0
 offset_bottom = 272.0
 card = ExtResource("22_n6mvw")
 setIcon = ExtResource("20_s5g36")
 cardName = "Candy Spider"
 
 [node name="Shield_Card5" parent="ShieldCards" instance=ExtResource("6_qky8g")]
-offset_left = 384.0
-offset_top = 528.0
-offset_right = 384.0
-offset_bottom = 528.0
+offset_left = 376.0
+offset_top = 520.0
+offset_right = 376.0
+offset_bottom = 520.0
 card = ExtResource("23_n2xrv")
 setIcon = ExtResource("20_s5g36")
 cardName = "Candy Witch"
 
 [node name="Shield_Card6" parent="ShieldCards" instance=ExtResource("6_qky8g")]
-offset_left = 672.0
-offset_top = 528.0
-offset_right = 672.0
-offset_bottom = 528.0
+offset_left = 664.0
+offset_top = 520.0
+offset_right = 664.0
+offset_bottom = 520.0
 card = ExtResource("24_quy6l")
 setIcon = ExtResource("20_s5g36")
 cardName = "Scarecrow"
 
 [node name="Shield_Card7" parent="ShieldCards" instance=ExtResource("6_qky8g")]
-offset_left = 968.0
-offset_top = 528.0
-offset_right = 968.0
-offset_bottom = 528.0
+offset_left = 952.0
+offset_top = 520.0
+offset_right = 952.0
+offset_bottom = 520.0
 card = ExtResource("25_ttxwh")
 setIcon = ExtResource("20_s5g36")
 cardName = "Snowflake Candy Corn"
 
 [node name="Shield_Card8" parent="ShieldCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
-offset_top = 528.0
-offset_right = 1264.0
-offset_bottom = 528.0
+offset_left = 1240.0
+offset_top = 520.0
+offset_right = 1240.0
+offset_bottom = 520.0
 card = ExtResource("26_pyv87")
 setIcon = ExtResource("20_s5g36")
 cardName = "Snowflake Scarecrow"
 
 [node name="Shield_Card9" parent="ShieldCards" instance=ExtResource("6_qky8g")]
-offset_left = 384.0
+offset_left = 376.0
 offset_top = 784.0
-offset_right = 384.0
+offset_right = 376.0
 offset_bottom = 784.0
 card = ExtResource("27_3psh1")
 setIcon = ExtResource("20_s5g36")
 cardName = "Snowflake Spider"
 
 [node name="Shield_Card10" parent="ShieldCards" instance=ExtResource("6_qky8g")]
-offset_left = 672.0
+offset_left = 664.0
 offset_top = 784.0
-offset_right = 672.0
+offset_right = 664.0
 offset_bottom = 784.0
 card = ExtResource("28_yn66k")
 setIcon = ExtResource("20_s5g36")
 cardName = "Snowflake Witch"
 
 [node name="Shield_Card11" parent="ShieldCards" instance=ExtResource("6_qky8g")]
-offset_left = 968.0
+offset_left = 944.0
 offset_top = 784.0
-offset_right = 968.0
+offset_right = 944.0
 offset_bottom = 784.0
 card = ExtResource("29_hrb6i")
 setIcon = ExtResource("20_s5g36")
 cardName = "Spider"
 
 [node name="Shield_Card12" parent="ShieldCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
+offset_left = 1232.0
 offset_top = 784.0
-offset_right = 1264.0
+offset_right = 1232.0
 offset_bottom = 784.0
 card = ExtResource("30_anxu6")
 setIcon = ExtResource("20_s5g36")
@@ -342,81 +342,81 @@ setIcon = ExtResource("31_stxae")
 cardName = "Candy Ghost"
 
 [node name="Staff_Card4" parent="StaffCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
+offset_left = 1256.0
 offset_top = 272.0
-offset_right = 1264.0
+offset_right = 1256.0
 offset_bottom = 272.0
 card = ExtResource("10_6y6t6")
 setIcon = ExtResource("31_stxae")
 cardName = "Candy Pumpkin"
 
 [node name="Staff_Card5" parent="StaffCards" instance=ExtResource("6_qky8g")]
-offset_left = 384.0
-offset_top = 528.0
-offset_right = 384.0
-offset_bottom = 528.0
+offset_left = 376.0
+offset_top = 512.0
+offset_right = 376.0
+offset_bottom = 512.0
 card = ExtResource("11_lgruw")
 setIcon = ExtResource("31_stxae")
 cardName = "Candy Tree"
 
 [node name="Staff_Card6" parent="StaffCards" instance=ExtResource("6_qky8g")]
-offset_left = 672.0
-offset_top = 528.0
-offset_right = 672.0
-offset_bottom = 528.0
+offset_left = 664.0
+offset_top = 512.0
+offset_right = 664.0
+offset_bottom = 512.0
 card = ExtResource("12_rr1j1")
 setIcon = ExtResource("31_stxae")
 cardName = "Ghost"
 
 [node name="Staff_Card7" parent="StaffCards" instance=ExtResource("6_qky8g")]
-offset_left = 968.0
-offset_top = 528.0
-offset_right = 968.0
-offset_bottom = 528.0
+offset_left = 952.0
+offset_top = 512.0
+offset_right = 952.0
+offset_bottom = 512.0
 card = ExtResource("13_7ctsh")
 setIcon = ExtResource("31_stxae")
 cardName = "Pumpkin"
 
 [node name="Staff_Card8" parent="StaffCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
-offset_top = 528.0
-offset_right = 1264.0
-offset_bottom = 528.0
+offset_left = 1240.0
+offset_top = 512.0
+offset_right = 1240.0
+offset_bottom = 512.0
 card = ExtResource("14_fvpnp")
 setIcon = ExtResource("31_stxae")
 cardName = "Snowflake Bat"
 
 [node name="Staff_Card9" parent="StaffCards" instance=ExtResource("6_qky8g")]
-offset_left = 384.0
+offset_left = 376.0
 offset_top = 784.0
-offset_right = 384.0
+offset_right = 376.0
 offset_bottom = 784.0
 card = ExtResource("15_lrph0")
 setIcon = ExtResource("31_stxae")
 cardName = "Snowflake Ghost"
 
 [node name="Staff_Card10" parent="StaffCards" instance=ExtResource("6_qky8g")]
-offset_left = 672.0
+offset_left = 656.0
 offset_top = 784.0
-offset_right = 672.0
+offset_right = 656.0
 offset_bottom = 784.0
 card = ExtResource("16_3ev8n")
 setIcon = ExtResource("31_stxae")
 cardName = "Snowflake Pumpkin"
 
 [node name="Staff_Card11" parent="StaffCards" instance=ExtResource("6_qky8g")]
-offset_left = 968.0
+offset_left = 944.0
 offset_top = 784.0
-offset_right = 968.0
+offset_right = 944.0
 offset_bottom = 784.0
 card = ExtResource("17_3bnqp")
 setIcon = ExtResource("31_stxae")
 cardName = "Snowflake Tree"
 
 [node name="Staff_Card12" parent="StaffCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
+offset_left = 1232.0
 offset_top = 784.0
-offset_right = 1264.0
+offset_right = 1232.0
 offset_bottom = 784.0
 card = ExtResource("18_s5dsk")
 setIcon = ExtResource("31_stxae")
@@ -453,9 +453,9 @@ setIcon = ExtResource("32_tia5c")
 cardName = "Candy Ghost"
 
 [node name="Sword_Card4" parent="SwordCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
+offset_left = 1256.0
 offset_top = 272.0
-offset_right = 1264.0
+offset_right = 1256.0
 offset_bottom = 272.0
 card = ExtResource("10_6y6t6")
 setIcon = ExtResource("32_tia5c")
@@ -463,71 +463,71 @@ cardName = "Candy Pumpkin"
 
 [node name="Sword_Card5" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 384.0
-offset_top = 528.0
+offset_top = 512.0
 offset_right = 384.0
-offset_bottom = 528.0
+offset_bottom = 512.0
 card = ExtResource("11_lgruw")
 setIcon = ExtResource("32_tia5c")
 cardName = "Candy Tree"
 
 [node name="Sword_Card6" parent="SwordCards" instance=ExtResource("6_qky8g")]
-offset_left = 672.0
-offset_top = 528.0
-offset_right = 672.0
-offset_bottom = 528.0
+offset_left = 664.0
+offset_top = 512.0
+offset_right = 664.0
+offset_bottom = 512.0
 card = ExtResource("12_rr1j1")
 setIcon = ExtResource("32_tia5c")
 cardName = "Ghost"
 
 [node name="Sword_Card7" parent="SwordCards" instance=ExtResource("6_qky8g")]
-offset_left = 968.0
-offset_top = 528.0
-offset_right = 968.0
-offset_bottom = 528.0
+offset_left = 952.0
+offset_top = 512.0
+offset_right = 952.0
+offset_bottom = 512.0
 card = ExtResource("13_7ctsh")
 setIcon = ExtResource("32_tia5c")
 cardName = "Pumpkin"
 
 [node name="Sword_Card8" parent="SwordCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
-offset_top = 528.0
-offset_right = 1264.0
-offset_bottom = 528.0
+offset_left = 1240.0
+offset_top = 512.0
+offset_right = 1240.0
+offset_bottom = 512.0
 card = ExtResource("14_fvpnp")
 setIcon = ExtResource("32_tia5c")
 cardName = "Snowflake Bat"
 
 [node name="Sword_Card9" parent="SwordCards" instance=ExtResource("6_qky8g")]
-offset_left = 384.0
+offset_left = 376.0
 offset_top = 784.0
-offset_right = 384.0
+offset_right = 376.0
 offset_bottom = 784.0
 card = ExtResource("15_lrph0")
 setIcon = ExtResource("32_tia5c")
 cardName = "Snowflake Ghost"
 
 [node name="Sword_Card10" parent="SwordCards" instance=ExtResource("6_qky8g")]
-offset_left = 672.0
+offset_left = 664.0
 offset_top = 784.0
-offset_right = 672.0
+offset_right = 664.0
 offset_bottom = 784.0
 card = ExtResource("16_3ev8n")
 setIcon = ExtResource("32_tia5c")
 cardName = "Snowflake Pumpkin"
 
 [node name="Sword_Card11" parent="SwordCards" instance=ExtResource("6_qky8g")]
-offset_left = 968.0
+offset_left = 944.0
 offset_top = 784.0
-offset_right = 968.0
+offset_right = 944.0
 offset_bottom = 784.0
 card = ExtResource("17_3bnqp")
 setIcon = ExtResource("32_tia5c")
 cardName = "Snowflake Tree"
 
 [node name="Sword_Card12" parent="SwordCards" instance=ExtResource("6_qky8g")]
-offset_left = 1264.0
+offset_left = 1232.0
 offset_top = 784.0
-offset_right = 1264.0
+offset_right = 1232.0
 offset_bottom = 784.0
 card = ExtResource("18_s5dsk")
 setIcon = ExtResource("32_tia5c")

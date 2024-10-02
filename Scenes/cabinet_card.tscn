@@ -1,8 +1,8 @@
 [gd_scene load_steps=5 format=3 uid="uid://dtfljmvlp50qf"]
 
-[ext_resource type="Texture2D" uid="uid://ydtarorbvogp" path="res://Assets/Art/Cards/Card_Bat.png" id="1_ocfwx"]
 [ext_resource type="Script" path="res://Scripts/cabinet_card.gd" id="1_wcb8b"]
 [ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="2_8ysl5"]
+[ext_resource type="Texture2D" uid="uid://o1yw784u16tw" path="res://Assets/Art/Cards/Card_Top.png" id="2_ovsdx"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="3_8fu3l"]
 
 [node name="CabinetCard" type="Control"]
@@ -19,9 +19,10 @@ metadata/_edit_group_ = true
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture_normal = ExtResource("1_ocfwx")
+texture_normal = ExtResource("2_ovsdx")
 
 [node name="SetIcon" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(128, 211)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_8ysl5")
@@ -38,4 +39,6 @@ theme_override_font_sizes/font_size = 12
 text = "Bat"
 vertical_alignment = 1
 
+[connection signal="mouse_entered" from="Card" to="." method="_on_card_mouse_entered"]
+[connection signal="mouse_exited" from="Card" to="." method="_on_card_mouse_exited"]
 [connection signal="pressed" from="Card" to="." method="_on_card_pressed"]
