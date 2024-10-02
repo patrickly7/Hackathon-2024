@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://buthx4mag0w5"]
+[gd_scene load_steps=15 format=3 uid="uid://buthx4mag0w5"]
 
 [ext_resource type="Script" path="res://Scripts/results_screen.gd" id="1_0kxqi"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_h6jqq"]
@@ -10,6 +10,10 @@
 [ext_resource type="Texture2D" uid="uid://bch0742wa8vma" path="res://Assets/Art/Ranks/C_Rank.png" id="7_k0vuf"]
 [ext_resource type="Texture2D" uid="uid://bxu7on7jrb713" path="res://Assets/Art/Ranks/D_Rank.png" id="8_q0jyh"]
 [ext_resource type="Texture2D" uid="uid://bjgglc026ooyx" path="res://Assets/Art/Ranks/F_Rank.png" id="9_tmlrb"]
+[ext_resource type="AudioStream" uid="uid://cxlrhxqlorkql" path="res://Assets/Music/Result_1.mp3" id="11_o3lx5"]
+[ext_resource type="AudioStream" uid="uid://7tqxipdaj8i3" path="res://Assets/Music/Result_2.mp3" id="12_xj0sk"]
+[ext_resource type="AudioStream" uid="uid://cmastxp5eqom3" path="res://Assets/Music/Result_3.mp3" id="13_ndecn"]
+[ext_resource type="AudioStream" uid="uid://1ku637p0804r" path="res://Assets/Music/Result_4.mp3" id="14_aofbh"]
 
 [node name="ResultsScreen" type="Control"]
 layout_mode = 3
@@ -145,6 +149,18 @@ visible = false
 position = Vector2(1600, 450)
 scale = Vector2(1.95313, 1.95313)
 texture = ExtResource("9_tmlrb")
+
+[node name="FirstResultSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("11_o3lx5")
+
+[node name="SecondResultSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_xj0sk")
+
+[node name="ThirdResultSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("13_ndecn")
+
+[node name="FourthResultSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("14_aofbh")
 
 [connection signal="pressed" from="PlayAgainButton" to="." method="_on_play_again_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

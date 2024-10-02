@@ -7,6 +7,9 @@ const totalTime = 150
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	if Global.firstTimePlaying:
+		open_help_menu()
+	
 	$StartTimer.start()
 
 
@@ -51,15 +54,15 @@ func update_message(message):
 	$Message.text = message
 	$Message2.text = message
 
+func open_help_menu():
+	get_tree().paused = true
+	hide_buttons()
+	$HelpMenu.show()
+
 func _on_help_button_pressed():
 	$ButtonClickSound.play()
 	await get_tree().create_timer(0.1).timeout
-	
-	get_tree().paused = true
-	
-	hide_buttons()
-	
-	$HelpMenu.show()
+	open_help_menu()
 
 func _on_pause_button_pressed():
 	$ButtonClickSound.play()
@@ -77,7 +80,10 @@ func _on_pause_menu_hidden():
 
 
 func _on_help_menu_hidden():
-	show_buttons()
+	if Global.firstTimePlaying:
+		Global.firstTimePlaying = false
+	else:
+		show_buttons()
 
 
 func hide_buttons():

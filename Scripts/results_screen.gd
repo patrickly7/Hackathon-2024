@@ -2,18 +2,22 @@ extends Control
 
 func _ready():
 	await get_tree().create_timer(1).timeout
+	$FirstResultSound.play()
 	$CorrectCardsPulled.show()
 	$CorrectCardsPulled.text = "Correct Cards Pulled: " + str(Global.correctCardsPulled)
 	
 	await get_tree().create_timer(1).timeout
+	$SecondResultSound.play()
 	$IncorrectCardsPulled.show()
 	$IncorrectCardsPulled.text = "Inorrect Cards Pulled: " + str(Global.wrongCardsPulled)
 	
 	await get_tree().create_timer(1).timeout
+	$ThirdResultSound.play()
 	$SQsCompleted.show()
 	$SQsCompleted.text = "SQs Completed: " + str(Global.sqsCompleted)
 	
 	await get_tree().create_timer(1).timeout
+	$FourthResultSound.play()
 	$TimesWrongShippingUsed.show()
 	$TimesWrongShippingUsed.text = "Times Wrong Shipped was Used: " + str(Global.wrongShippingUsed)
 	

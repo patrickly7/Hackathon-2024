@@ -58,6 +58,8 @@ const cardToSetIconDict = {
 	"Witch": "res://Assets/Art/Icons/Set_Shield.png"
 }
 
+var firstTimePlaying = true
+
 var cardsToPull = []
 var cardsToPullQuantities = []
 var cardsPulled = []
