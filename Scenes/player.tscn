@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://v7cvupxx4j3i" path="res://Assets/Art/Character/Levi_Side_Walk.png" id="7_mrmaw"]
 [ext_resource type="Texture2D" uid="uid://dgp1py7jt1mnl" path="res://Assets/Art/Character/Speech_Bubble.png" id="8_0lg1v"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="9_byy3g"]
-[ext_resource type="AudioStream" uid="uid://s7r3v3iop82w" path="res://Assets/Music/Drawer_Open.mp3" id="10_03br4"]
-[ext_resource type="AudioStream" uid="uid://bh63jqelwhcag" path="res://Assets/Music/Ship_Package.mp3" id="11_pg58b"]
+[ext_resource type="AudioStream" uid="uid://bbw5618y82boa" path="res://Assets/Music/Drawer_Open_Short.mp3" id="10_wbgo7"]
+[ext_resource type="AudioStream" uid="uid://bhr2qfub450ln" path="res://Assets/Music/Ship_One_Package.mp3" id="11_pncme"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_smtxl"]
 animations = [{
@@ -83,10 +83,10 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CabinetOpenSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("10_03br4")
+stream = ExtResource("10_wbgo7")
 
 [node name="ShippingSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("11_pg58b")
+stream = ExtResource("11_pncme")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

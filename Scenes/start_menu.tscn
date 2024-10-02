@@ -1,22 +1,17 @@
-[gd_scene load_steps=4 format=3 uid="uid://bu1aq5y7rime7"]
+[gd_scene load_steps=5 format=3 uid="uid://bu1aq5y7rime7"]
 
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_c521m"]
 [ext_resource type="Script" path="res://Scripts/start_menu.gd" id="1_n0er7"]
+[ext_resource type="Texture2D" uid="uid://cjajjgcfs42x7" path="res://Assets/Art/Logo_Beeg.png" id="2_sc3jh"]
 [ext_resource type="AudioStream" uid="uid://b11x76aq4b6bw" path="res://Assets/Music/Button_Click.mp3" id="3_mqjkk"]
 
 [node name="StartMenu" type="Node2D"]
 script = ExtResource("1_n0er7")
 
-[node name="Title" type="Label" parent="."]
-offset_left = 806.0
-offset_top = 257.0
-offset_right = 1112.0
-offset_bottom = 424.0
-theme_override_fonts/font = ExtResource("1_c521m")
-theme_override_font_sizes/font_size = 64
-text = "Ship It!"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Logo" type="Sprite2D" parent="."]
+position = Vector2(936, 320)
+scale = Vector2(0.710937, 0.710937)
+texture = ExtResource("2_sc3jh")
 
 [node name="StartButton" type="Button" parent="."]
 offset_left = 784.0

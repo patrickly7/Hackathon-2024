@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjajjgcfs42x7"
-path="res://.godot/imported/Logo_Beeg.png-666f4760d6bbd4ca2245ac063ee28fc7.ctex"
+uid="uid://bjgglc026ooyx"
+path="res://.godot/imported/F_Rank.png-bf64d60e80086c202bda5556ec9ac866.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Art/Logo_Beeg.png"
-dest_files=["res://.godot/imported/Logo_Beeg.png-666f4760d6bbd4ca2245ac063ee28fc7.ctex"]
+source_file="res://Assets/Art/Ranks/F_Rank.png"
+dest_files=["res://.godot/imported/F_Rank.png-bf64d60e80086c202bda5556ec9ac866.ctex"]
 
 [params]
 
