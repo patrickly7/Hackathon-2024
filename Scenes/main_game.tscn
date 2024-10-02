@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://2qrnnjfd26oc"]
+[gd_scene load_steps=25 format=3 uid="uid://2qrnnjfd26oc"]
 
 [ext_resource type="Script" path="res://Scripts/main_game.gd" id="1_bf2dl"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_m6rd2"]
@@ -6,9 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://bs1gsfxi6lcvo" path="res://Assets/Art/Background.png" id="2_quwgs"]
 [ext_resource type="Texture2D" uid="uid://c1f70et2ii04v" path="res://Assets/Art/HelpButton.png" id="3_ncfqp"]
 [ext_resource type="PackedScene" uid="uid://de1r0bx54exk2" path="res://Scenes/pause_menu.tscn" id="4_2h1lt"]
+[ext_resource type="Texture2D" uid="uid://c105uel5rvtr1" path="res://Assets/Art/HelpButton_Hover.png" id="4_w0bwo"]
 [ext_resource type="PackedScene" uid="uid://dqy1037b3h5uq" path="res://Scenes/help_menu.tscn" id="5_iq3vo"]
+[ext_resource type="Texture2D" uid="uid://cq7cejpde4btk" path="res://Assets/Art/PauseButton.png" id="5_opgmr"]
 [ext_resource type="Texture2D" uid="uid://r3wspcuenxn3" path="res://Assets/Art/Icons/Shipping_Envelope.png" id="6_gdhfv"]
 [ext_resource type="PackedScene" uid="uid://bg1xrpjfwt311" path="res://Scenes/cabinet_view.tscn" id="6_lugco"]
+[ext_resource type="Texture2D" uid="uid://dyv7t6uairoo4" path="res://Assets/Art/PauseButton_Hover.png" id="6_rkl0r"]
 [ext_resource type="PackedScene" uid="uid://g1ry4j0al1q8" path="res://Scenes/shipping_station.tscn" id="7_2uex1"]
 [ext_resource type="Texture2D" uid="uid://bn7m5dg50obyh" path="res://Assets/Art/Icons/Shipping_BubbleMailer.png" id="7_s3x42"]
 [ext_resource type="Texture2D" uid="uid://cm7k38othvpi" path="res://Assets/Art/Icons/Shipping_Package.png" id="8_nfy0v"]
@@ -37,22 +40,22 @@ texture = ExtResource("2_quwgs")
 
 [node name="HelpButton" type="TextureButton" parent="."]
 visible = false
-offset_left = 1625.0
-offset_top = 2.0
-offset_right = 1745.0
-offset_bottom = 122.0
+offset_left = 1657.0
+offset_top = 4.0
+offset_right = 1777.0
+offset_bottom = 124.0
 texture_normal = ExtResource("3_ncfqp")
+texture_hover = ExtResource("4_w0bwo")
 stretch_mode = 4
 
-[node name="PauseButton" type="Button" parent="."]
+[node name="PauseButton" type="TextureButton" parent="."]
 visible = false
-offset_left = 1756.0
-offset_top = 36.0
-offset_right = 1883.0
-offset_bottom = 98.0
-theme_override_fonts/font = ExtResource("1_m6rd2")
-theme_override_font_sizes/font_size = 32
-text = "Pause"
+offset_left = 1803.0
+offset_top = 24.0
+offset_right = 1899.0
+offset_bottom = 120.0
+texture_normal = ExtResource("5_opgmr")
+texture_hover = ExtResource("6_rkl0r")
 
 [node name="StartPosition" type="Marker2D" parent="."]
 position = Vector2(960, 540)
