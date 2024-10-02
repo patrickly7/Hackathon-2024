@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dqy1037b3h5uq"]
+[gd_scene load_steps=16 format=3 uid="uid://dqy1037b3h5uq"]
 
 [ext_resource type="Script" path="res://Scripts/HelpMenu.gd" id="1_4kxfj"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="2_qvyfw"]
@@ -7,7 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://ctcs0sqiq0bhd" path="res://Assets/Art/Help/Arrow_Right.png" id="5_6ht5r"]
 [ext_resource type="Texture2D" uid="uid://br783mbyincco" path="res://Assets/Art/Icons/Set_Bow.png" id="6_whki5"]
 [ext_resource type="Texture2D" uid="uid://c3j24a53d75a0" path="res://Assets/Art/Icons/Set_Shield.png" id="7_ogfv1"]
+[ext_resource type="Texture2D" uid="uid://b5ksi4w2g446g" path="res://Assets/Art/Help/Arrow_Right_Highlighted.png" id="7_y34gj"]
 [ext_resource type="Texture2D" uid="uid://e1yjqkn5vmq5" path="res://Assets/Art/Icons/Set_Staff.png" id="8_504er"]
+[ext_resource type="Texture2D" uid="uid://6gb40xun8bcw" path="res://Assets/Art/Help/Circle_PageSelected.png" id="8_n4kb8"]
 [ext_resource type="Texture2D" uid="uid://clrkrdqytok6b" path="res://Assets/Art/Icons/Set_Sword.png" id="9_ugsxw"]
 [ext_resource type="Texture2D" uid="uid://r3wspcuenxn3" path="res://Assets/Art/Icons/Shipping_Envelope.png" id="10_833bp"]
 [ext_resource type="Texture2D" uid="uid://bn7m5dg50obyh" path="res://Assets/Art/Icons/Shipping_BubbleMailer.png" id="11_fk71g"]
@@ -60,6 +62,53 @@ theme_override_font_sizes/font_size = 128
 text = "HELP!"
 horizontal_alignment = 1
 
+[node name="LeftArrow" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 824.0
+offset_right = 676.0
+offset_bottom = 968.0
+texture_normal = ExtResource("3_v4dma")
+texture_hover = ExtResource("11_t5efd")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 696.0
+offset_top = 832.0
+offset_right = 812.0
+offset_bottom = 975.0
+texture = ExtResource("4_cp7ux")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = 832.0
+offset_top = 832.0
+offset_right = 948.0
+offset_bottom = 975.0
+texture = ExtResource("4_cp7ux")
+
+[node name="TextureRect3" type="TextureRect" parent="."]
+offset_left = 960.0
+offset_top = 832.0
+offset_right = 1076.0
+offset_bottom = 975.0
+texture = ExtResource("4_cp7ux")
+
+[node name="TextureRect4" type="TextureRect" parent="."]
+offset_left = 1096.0
+offset_top = 832.0
+offset_right = 1212.0
+offset_bottom = 975.0
+texture = ExtResource("4_cp7ux")
+
+[node name="RightArrow" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1248.0
+offset_top = 824.0
+offset_right = 1364.0
+offset_bottom = 968.0
+texture_normal = ExtResource("5_6ht5r")
+texture_hover = ExtResource("7_y34gj")
+
 [node name="IntroPage" type="Node2D" parent="."]
 
 [node name="Intro" type="Label" parent="IntroPage"]
@@ -79,6 +128,13 @@ theme_override_font_sizes/font_size = 128
 text = "How to
 Ship It"
 horizontal_alignment = 1
+
+[node name="PageOpenIndicator" type="TextureRect" parent="IntroPage"]
+offset_left = 696.0
+offset_top = 832.0
+offset_right = 812.0
+offset_bottom = 975.0
+texture = ExtResource("8_n4kb8")
 
 [node name="ControlsPage" type="Node2D" parent="."]
 visible = false
@@ -107,6 +163,13 @@ Left Click ....  Pull Card
 "
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="ControlPageOpenIndicator" type="TextureRect" parent="ControlsPage"]
+offset_left = 832.0
+offset_top = 832.0
+offset_right = 948.0
+offset_bottom = 975.0
+texture = ExtResource("8_n4kb8")
 
 [node name="SetsPage" type="Node2D" parent="."]
 visible = false
@@ -197,6 +260,13 @@ text = "Shelf Order is Alphabetical"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="SetsPageOpenIndicator" type="TextureRect" parent="SetsPage"]
+offset_left = 960.0
+offset_top = 832.0
+offset_right = 1076.0
+offset_bottom = 975.0
+texture = ExtResource("8_n4kb8")
+
 [node name="PackageTypesPage" type="Node2D" parent="."]
 visible = false
 
@@ -256,51 +326,12 @@ position = Vector2(76, 80)
 scale = Vector2(0.59375, 0.625)
 texture = ExtResource("12_1uwom")
 
-[node name="LeftArrow" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 560.0
-offset_top = 824.0
-offset_right = 676.0
-offset_bottom = 968.0
-texture_normal = ExtResource("3_v4dma")
-texture_hover = ExtResource("11_t5efd")
-
-[node name="TextureRect" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 696.0
-offset_top = 832.0
-offset_right = 812.0
-offset_bottom = 975.0
-texture = ExtResource("4_cp7ux")
-
-[node name="TextureRect2" type="TextureRect" parent="."]
-offset_left = 832.0
-offset_top = 832.0
-offset_right = 948.0
-offset_bottom = 975.0
-texture = ExtResource("4_cp7ux")
-
-[node name="TextureRect3" type="TextureRect" parent="."]
-offset_left = 960.0
-offset_top = 832.0
-offset_right = 1076.0
-offset_bottom = 975.0
-texture = ExtResource("4_cp7ux")
-
-[node name="TextureRect4" type="TextureRect" parent="."]
+[node name="TextureRect4" type="TextureRect" parent="PackageTypesPage"]
 offset_left = 1096.0
 offset_top = 832.0
 offset_right = 1212.0
 offset_bottom = 975.0
-texture = ExtResource("4_cp7ux")
-
-[node name="RightArrow" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 1248.0
-offset_top = 824.0
-offset_right = 1364.0
-offset_bottom = 968.0
-texture_normal = ExtResource("5_6ht5r")
+texture = ExtResource("8_n4kb8")
 
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="LeftArrow" to="." method="_on_left_arrow_pressed"]
