@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dqy1037b3h5uq"]
+[gd_scene load_steps=13 format=3 uid="uid://dqy1037b3h5uq"]
 
 [ext_resource type="Script" path="res://Scripts/HelpMenu.gd" id="1_4kxfj"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="2_qvyfw"]
@@ -9,6 +9,9 @@
 [ext_resource type="Texture2D" uid="uid://c3j24a53d75a0" path="res://Assets/Art/Icons/Set_Shield.png" id="7_ogfv1"]
 [ext_resource type="Texture2D" uid="uid://e1yjqkn5vmq5" path="res://Assets/Art/Icons/Set_Staff.png" id="8_504er"]
 [ext_resource type="Texture2D" uid="uid://clrkrdqytok6b" path="res://Assets/Art/Icons/Set_Sword.png" id="9_ugsxw"]
+[ext_resource type="Texture2D" uid="uid://r3wspcuenxn3" path="res://Assets/Art/Icons/Shipping_Envelope.png" id="10_833bp"]
+[ext_resource type="Texture2D" uid="uid://bn7m5dg50obyh" path="res://Assets/Art/Icons/Shipping_BubbleMailer.png" id="11_fk71g"]
+[ext_resource type="Texture2D" uid="uid://cm7k38othvpi" path="res://Assets/Art/Icons/Shipping_Package.png" id="12_1uwom"]
 
 [node name="HelpMenu" type="Control"]
 process_mode = 3
@@ -22,7 +25,8 @@ script = ExtResource("1_4kxfj")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_right = 1924.0
+offset_left = 1.0
+offset_right = 1925.0
 offset_bottom = 1081.0
 color = Color(0, 0, 0, 0.294118)
 metadata/_edit_group_ = true
@@ -105,17 +109,18 @@ text = "HELP!"
 horizontal_alignment = 1
 
 [node name="IntroPage" type="Node2D" parent="."]
-visible = false
 
 [node name="Intro" type="Label" parent="IntroPage"]
+visible = false
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_top = 425.5
-offset_right = 1920.0
-offset_bottom = 654.5
+offset_left = 447.0
+offset_top = 426.0
+offset_right = 1473.0
+offset_bottom = 655.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_qvyfw")
@@ -141,13 +146,13 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_qvyfw")
 theme_override_font_sizes/font_size = 50
-text = "WASD 		--		 Move
+text = "WASD 	  ....   Move
 
 
-Space Bar --  Interact
+Space Bar ....  Interact
 
 
-Left Click --  Pull Card
+Left Click ....  Pull Card
 "
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -161,66 +166,84 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = 448.0
-offset_top = 256.0
+offset_top = 192.0
 offset_right = 1312.0
-offset_bottom = 832.0
+offset_bottom = 768.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_qvyfw")
 theme_override_font_sizes/font_size = 60
-text = "Cabinet 1 --
+text = "Cabinet 1 ....
 
-Cabinet 2 --
+Cabinet 2 ....
 
-Cabinet 3 --
+Cabinet 3 ....
 
-Cabinet 4 --"
+Cabinet 4 ...."
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="BowSetIconBase" type="ColorRect" parent="SetsPage"]
 offset_left = 1152.0
-offset_top = 328.0
+offset_top = 264.0
 offset_right = 1256.0
-offset_bottom = 432.0
+offset_bottom = 368.0
 
 [node name="BowSetIcon" type="Sprite2D" parent="SetsPage/BowSetIconBase"]
 position = Vector2(52, 52)
 scale = Vector2(0.40625, 0.40625)
 texture = ExtResource("6_whki5")
 
-[node name="ColorRect2" type="ColorRect" parent="SetsPage"]
+[node name="ShieldSetIconBase" type="ColorRect" parent="SetsPage"]
 offset_left = 1152.0
-offset_top = 440.0
+offset_top = 376.0
 offset_right = 1256.0
-offset_bottom = 544.0
+offset_bottom = 480.0
 
-[node name="BowSetIcon" type="Sprite2D" parent="SetsPage/ColorRect2"]
+[node name="ShieldsSetIcon" type="Sprite2D" parent="SetsPage/ShieldSetIconBase"]
 position = Vector2(52, 52)
 scale = Vector2(0.40625, 0.40625)
 texture = ExtResource("7_ogfv1")
 
-[node name="ColorRect3" type="ColorRect" parent="SetsPage"]
+[node name="StaffSetIconBase" type="ColorRect" parent="SetsPage"]
 offset_left = 1152.0
-offset_top = 552.0
+offset_top = 488.0
 offset_right = 1256.0
-offset_bottom = 656.0
+offset_bottom = 592.0
 
-[node name="BowSetIcon" type="Sprite2D" parent="SetsPage/ColorRect3"]
+[node name="StaffSetIcon" type="Sprite2D" parent="SetsPage/StaffSetIconBase"]
 position = Vector2(52, 52)
 scale = Vector2(0.40625, 0.40625)
 texture = ExtResource("8_504er")
 
-[node name="ColorRect4" type="ColorRect" parent="SetsPage"]
+[node name="SwordSetIconBase" type="ColorRect" parent="SetsPage"]
 offset_left = 1152.0
-offset_top = 664.0
+offset_top = 600.0
 offset_right = 1256.0
-offset_bottom = 768.0
+offset_bottom = 704.0
 
-[node name="BowSetIcon" type="Sprite2D" parent="SetsPage/ColorRect4"]
+[node name="SwordSetIcon" type="Sprite2D" parent="SetsPage/SwordSetIconBase"]
 position = Vector2(52, 52)
 scale = Vector2(0.40625, 0.40625)
 texture = ExtResource("9_ugsxw")
+
+[node name="CabinetOrder" type="Label" parent="SetsPage"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 448.0
+offset_top = 704.0
+offset_right = 1471.0
+offset_bottom = 824.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_qvyfw")
+theme_override_font_sizes/font_size = 50
+text = "Shelf Order is Alphabetical"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="PackageTypesPage" type="Node2D" parent="."]
 visible = false
@@ -231,16 +254,55 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_top = 425.5
-offset_right = 1920.0
-offset_bottom = 654.5
+offset_left = 816.0
+offset_top = 249.0
+offset_right = 1411.0
+offset_bottom = 825.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("2_qvyfw")
-theme_override_font_sizes/font_size = 128
-text = "How to
-Ship It"
-horizontal_alignment = 1
+theme_override_font_sizes/font_size = 60
+text = ".... 0oz - .99oz
+
+
+.... 1oz - 1.99oz
+
+
+.... 2oz +"
+vertical_alignment = 1
+
+[node name="EnvelopeIconBase" type="ColorRect" parent="PackageTypesPage"]
+offset_left = 626.0
+offset_top = 289.0
+offset_right = 778.0
+offset_bottom = 449.0
+
+[node name="EnvelopeIcon" type="Sprite2D" parent="PackageTypesPage/EnvelopeIconBase"]
+position = Vector2(76, 80)
+scale = Vector2(0.59375, 0.625)
+texture = ExtResource("10_833bp")
+
+[node name="BubbleIconBase2" type="ColorRect" parent="PackageTypesPage"]
+offset_left = 626.0
+offset_top = 465.0
+offset_right = 778.0
+offset_bottom = 625.0
+
+[node name="BubbleIcon" type="Sprite2D" parent="PackageTypesPage/BubbleIconBase2"]
+position = Vector2(76, 80)
+scale = Vector2(0.59375, 0.625)
+texture = ExtResource("11_fk71g")
+
+[node name="BoxIconBase3" type="ColorRect" parent="PackageTypesPage"]
+offset_left = 626.0
+offset_top = 641.0
+offset_right = 778.0
+offset_bottom = 801.0
+
+[node name="BoxIcon" type="Sprite2D" parent="PackageTypesPage/BoxIconBase3"]
+position = Vector2(76, 80)
+scale = Vector2(0.59375, 0.625)
+texture = ExtResource("12_1uwom")
 
 [connection signal="pressed" from="ColorRect2/CloseButton" to="." method="_on_close_button_pressed"]
 [connection signal="pressed" from="ColorRect2/LeftArrow" to="." method="_on_left_arrow_pressed"]
