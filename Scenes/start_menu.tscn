@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bu1aq5y7rime7"]
+[gd_scene load_steps=7 format=3 uid="uid://bu1aq5y7rime7"]
 
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_c521m"]
 [ext_resource type="Script" path="res://Scripts/start_menu.gd" id="1_n0er7"]
 [ext_resource type="Texture2D" uid="uid://bs1gsfxi6lcvo" path="res://Assets/Art/Background.png" id="2_ov08x"]
 [ext_resource type="Texture2D" uid="uid://cjajjgcfs42x7" path="res://Assets/Art/Logo_Beeg.png" id="2_sc3jh"]
 [ext_resource type="AudioStream" uid="uid://b11x76aq4b6bw" path="res://Assets/Music/Button_Click.mp3" id="3_mqjkk"]
+[ext_resource type="AudioStream" uid="uid://pbeic23l2nl8" path="res://Assets/Music/Ambiance/ShipIt_Ambience.mp3" id="6_yhem1"]
 
 [node name="StartMenu" type="Node2D"]
 script = ExtResource("1_n0er7")
@@ -47,6 +48,9 @@ text = "Quit"
 
 [node name="ButtonClickSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_mqjkk")
+
+[node name="Ambience" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_yhem1")
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

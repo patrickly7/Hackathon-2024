@@ -1,5 +1,8 @@
 extends Node2D
 
+func _ready():
+	$Ambience.play()
+
 func _on_start_button_pressed():
 	$ButtonClickSound.play()
 	await get_tree().create_timer(0.1).timeout
