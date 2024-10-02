@@ -1,11 +1,11 @@
-[gd_scene load_steps=35 format=3 uid="uid://bg1xrpjfwt311"]
+[gd_scene load_steps=59 format=3 uid="uid://bg1xrpjfwt311"]
 
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_0ti7u"]
 [ext_resource type="Script" path="res://Scripts/cabinet_view.gd" id="1_dn38j"]
 [ext_resource type="Texture2D" uid="uid://bwaxcx8hc3q3" path="res://icon.svg" id="2_78xdy"]
 [ext_resource type="Texture2D" uid="uid://b6c5qj5qplsnl" path="res://Assets/Art/OpenCabinet.png" id="2_v7g7v"]
-[ext_resource type="Texture2D" uid="uid://br783mbyincco" path="res://Assets/Art/Icons/Set_Bow.png" id="5_trxxf"]
-[ext_resource type="PackedScene" uid="uid://5omwyibg5x1c" path="res://Scenes/cabinet_card.tscn" id="6_qky8g"]
+[ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="5_trxxf"]
+[ext_resource type="PackedScene" uid="uid://dtfljmvlp50qf" path="res://Scenes/cabinet_card.tscn" id="6_qky8g"]
 [ext_resource type="Texture2D" uid="uid://ydtarorbvogp" path="res://Assets/Art/Cards/Card_Bat.png" id="6_tjfx7"]
 [ext_resource type="Texture2D" uid="uid://cwxbdall4v7px" path="res://Assets/Art/Cards/Card_Candy_Bat.png" id="8_cbbdg"]
 [ext_resource type="Texture2D" uid="uid://dgbkthw7ba2u0" path="res://Assets/Art/Cards/Card_Candy_Ghost.png" id="9_8ok20"]
@@ -20,7 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://d2gvp21fryh37" path="res://Assets/Art/Cards/Card_Tree.png" id="18_s5dsk"]
 [ext_resource type="Texture2D" uid="uid://b6fd6l2wow5o8" path="res://Assets/Art/Cards/Card_CandyCorn.png" id="19_f52rp"]
 [ext_resource type="Texture2D" uid="uid://b24cqmpi86kd5" path="res://Assets/Art/Cards/Card_Candy_CandyCorn.png" id="19_qqbnw"]
-[ext_resource type="Texture2D" uid="uid://c3j24a53d75a0" path="res://Assets/Art/Icons/Set_Shield.png" id="20_s5g36"]
+[ext_resource type="Texture2D" uid="uid://dbjfpkgay2y4d" path="res://Assets/Art/Icons/Set_Shield.png" id="20_s5g36"]
 [ext_resource type="Texture2D" uid="uid://dd6ne75rswkh8" path="res://Assets/Art/Cards/Card_Candy_Scarecrow.png" id="21_5fi4c"]
 [ext_resource type="Texture2D" uid="uid://bjm1p8wicsk4i" path="res://Assets/Art/Cards/Card_Candy_Spider.png" id="22_n6mvw"]
 [ext_resource type="Texture2D" uid="uid://vrxv4h0pdo8" path="res://Assets/Art/Cards/Card_Candy_Witch.png" id="23_n2xrv"]
@@ -31,9 +31,33 @@
 [ext_resource type="Texture2D" uid="uid://dgahdytsr6amo" path="res://Assets/Art/Cards/Card_Snowflake_Witch.png" id="28_yn66k"]
 [ext_resource type="Texture2D" uid="uid://cy5ix58f7on4b" path="res://Assets/Art/Cards/Card_Spider.png" id="29_hrb6i"]
 [ext_resource type="Texture2D" uid="uid://d126j3x57yk0l" path="res://Assets/Art/Cards/Card_Witch.png" id="30_anxu6"]
-[ext_resource type="Texture2D" uid="uid://e1yjqkn5vmq5" path="res://Assets/Art/Icons/Set_Staff.png" id="31_stxae"]
-[ext_resource type="Texture2D" uid="uid://clrkrdqytok6b" path="res://Assets/Art/Icons/Set_Sword.png" id="32_tia5c"]
+[ext_resource type="Texture2D" uid="uid://qbpbpoupd7e7" path="res://Assets/Art/Icons/Set_Staff.png" id="31_stxae"]
+[ext_resource type="Texture2D" uid="uid://dv7i3uw611uwe" path="res://Assets/Art/Cards/Card_Candy_Elf.png" id="32_6lian"]
+[ext_resource type="Texture2D" uid="uid://tlhiaal4n5cx" path="res://Assets/Art/Icons/Set_Sword.png" id="32_tia5c"]
 [ext_resource type="AudioStream" uid="uid://djvreudr8jmx0" path="res://Assets/Music/Drawer_Close_Short.mp3" id="34_na6as"]
+[ext_resource type="Texture2D" uid="uid://dn5vmpysf6c6o" path="res://Assets/Art/Cards/Card_Candy_Gift.png" id="34_o3rmq"]
+[ext_resource type="Texture2D" uid="uid://cpf6t1mglogo2" path="res://Assets/Art/Cards/Card_Candy_Reindeer.png" id="35_ydtgq"]
+[ext_resource type="Texture2D" uid="uid://pjjoyqiqhpia" path="res://Assets/Art/Cards/Card_Candy_Santa.png" id="36_p36fx"]
+[ext_resource type="Texture2D" uid="uid://cmmk1sjo5e5iq" path="res://Assets/Art/Cards/Card_Elf.png" id="37_b8vfy"]
+[ext_resource type="Texture2D" uid="uid://c658pls7u33dn" path="res://Assets/Art/Cards/Card_Gift.png" id="38_gh2g5"]
+[ext_resource type="Texture2D" uid="uid://bfu14lxsvlnxt" path="res://Assets/Art/Cards/Card_Reindeer.png" id="39_45r75"]
+[ext_resource type="Texture2D" uid="uid://chm5pcy5j1bot" path="res://Assets/Art/Cards/Card_Santa.png" id="40_nm5uq"]
+[ext_resource type="Texture2D" uid="uid://dvjmx180c4uwc" path="res://Assets/Art/Cards/Card_Snowflake_Elf.png" id="41_k704o"]
+[ext_resource type="Texture2D" uid="uid://mivrs7myhx3m" path="res://Assets/Art/Cards/Card_Snowflake_Gift.png" id="42_jj7at"]
+[ext_resource type="Texture2D" uid="uid://dstbvsero3ac2" path="res://Assets/Art/Cards/Card_Snowflake_Reindeer.png" id="43_oa3ia"]
+[ext_resource type="Texture2D" uid="uid://br6u8pg7ln3sx" path="res://Assets/Art/Cards/Card_Snowflake_Santa.png" id="44_v1q3b"]
+[ext_resource type="Texture2D" uid="uid://bddq05nrgaw4c" path="res://Assets/Art/Cards/Card_Candy_CandyCane.png" id="45_lt7wv"]
+[ext_resource type="Texture2D" uid="uid://cbsv10h152fsn" path="res://Assets/Art/Cards/Card_CandyCane.png" id="47_wpay6"]
+[ext_resource type="Texture2D" uid="uid://d2kbrk4fpehfs" path="res://Assets/Art/Cards/Card_Candy_Mistletoe.png" id="48_risac"]
+[ext_resource type="Texture2D" uid="uid://cjqr1gqxrg4gd" path="res://Assets/Art/Cards/Card_Candy_Snowman.png" id="49_v3udt"]
+[ext_resource type="Texture2D" uid="uid://b5doumrkdvymq" path="res://Assets/Art/Cards/Card_Candy_Stocking.png" id="50_jqjcy"]
+[ext_resource type="Texture2D" uid="uid://cpe6538o2gns3" path="res://Assets/Art/Cards/Card_Mistletoe.png" id="51_n56k2"]
+[ext_resource type="Texture2D" uid="uid://cnjjucht85w8c" path="res://Assets/Art/Cards/Card_Snowflake_CandyCane.png" id="52_fvc8d"]
+[ext_resource type="Texture2D" uid="uid://btogq60bm0ub6" path="res://Assets/Art/Cards/Card_Snowflake_Mistletoe.png" id="53_6kwfj"]
+[ext_resource type="Texture2D" uid="uid://cnig5ed53y18l" path="res://Assets/Art/Cards/Card_Snowflake_Snowman.png" id="54_amhva"]
+[ext_resource type="Texture2D" uid="uid://pxu1u00llhsh" path="res://Assets/Art/Cards/Card_Snowflake_Stocking.png" id="55_mch6c"]
+[ext_resource type="Texture2D" uid="uid://gll43elvoc0r" path="res://Assets/Art/Cards/Card_Snowman.png" id="56_ynhnm"]
+[ext_resource type="Texture2D" uid="uid://cn2ftssf4rerq" path="res://Assets/Art/Cards/Card_Stocking.png" id="57_vmx7w"]
 
 [node name="CabinetView" type="Control"]
 layout_mode = 3
@@ -320,108 +344,108 @@ offset_left = 384.0
 offset_top = 272.0
 offset_right = 384.0
 offset_bottom = 272.0
-card = ExtResource("6_tjfx7")
+card = ExtResource("32_6lian")
 setIcon = ExtResource("31_stxae")
-cardName = "Bat"
+cardName = "Candy Elf"
 
 [node name="Staff_Card2" parent="StaffCards" instance=ExtResource("6_qky8g")]
 offset_left = 672.0
 offset_top = 272.0
 offset_right = 672.0
 offset_bottom = 272.0
-card = ExtResource("8_cbbdg")
+card = ExtResource("34_o3rmq")
 setIcon = ExtResource("31_stxae")
-cardName = "Candy Bat"
+cardName = "Candy Gift"
 
 [node name="Staff_Card3" parent="StaffCards" instance=ExtResource("6_qky8g")]
 offset_left = 968.0
 offset_top = 272.0
 offset_right = 968.0
 offset_bottom = 272.0
-card = ExtResource("9_8ok20")
+card = ExtResource("35_ydtgq")
 setIcon = ExtResource("31_stxae")
-cardName = "Candy Ghost"
+cardName = "Candy Reindeer"
 
 [node name="Staff_Card4" parent="StaffCards" instance=ExtResource("6_qky8g")]
 offset_left = 1256.0
 offset_top = 272.0
 offset_right = 1256.0
 offset_bottom = 272.0
-card = ExtResource("10_6y6t6")
+card = ExtResource("36_p36fx")
 setIcon = ExtResource("31_stxae")
-cardName = "Candy Pumpkin"
+cardName = "Candy Santa"
 
 [node name="Staff_Card5" parent="StaffCards" instance=ExtResource("6_qky8g")]
 offset_left = 376.0
 offset_top = 512.0
 offset_right = 376.0
 offset_bottom = 512.0
-card = ExtResource("11_lgruw")
+card = ExtResource("37_b8vfy")
 setIcon = ExtResource("31_stxae")
-cardName = "Candy Tree"
+cardName = "Elf"
 
 [node name="Staff_Card6" parent="StaffCards" instance=ExtResource("6_qky8g")]
 offset_left = 664.0
 offset_top = 512.0
 offset_right = 664.0
 offset_bottom = 512.0
-card = ExtResource("12_rr1j1")
+card = ExtResource("38_gh2g5")
 setIcon = ExtResource("31_stxae")
-cardName = "Ghost"
+cardName = "Gift"
 
 [node name="Staff_Card7" parent="StaffCards" instance=ExtResource("6_qky8g")]
 offset_left = 952.0
 offset_top = 512.0
 offset_right = 952.0
 offset_bottom = 512.0
-card = ExtResource("13_7ctsh")
+card = ExtResource("39_45r75")
 setIcon = ExtResource("31_stxae")
-cardName = "Pumpkin"
+cardName = "Reindeer"
 
 [node name="Staff_Card8" parent="StaffCards" instance=ExtResource("6_qky8g")]
 offset_left = 1240.0
 offset_top = 512.0
 offset_right = 1240.0
 offset_bottom = 512.0
-card = ExtResource("14_fvpnp")
+card = ExtResource("40_nm5uq")
 setIcon = ExtResource("31_stxae")
-cardName = "Snowflake Bat"
+cardName = "Santa"
 
 [node name="Staff_Card9" parent="StaffCards" instance=ExtResource("6_qky8g")]
 offset_left = 376.0
 offset_top = 784.0
 offset_right = 376.0
 offset_bottom = 784.0
-card = ExtResource("15_lrph0")
+card = ExtResource("41_k704o")
 setIcon = ExtResource("31_stxae")
-cardName = "Snowflake Ghost"
+cardName = "Snowflake Elf"
 
 [node name="Staff_Card10" parent="StaffCards" instance=ExtResource("6_qky8g")]
 offset_left = 656.0
 offset_top = 784.0
 offset_right = 656.0
 offset_bottom = 784.0
-card = ExtResource("16_3ev8n")
+card = ExtResource("42_jj7at")
 setIcon = ExtResource("31_stxae")
-cardName = "Snowflake Pumpkin"
+cardName = "Snowflake Gift"
 
 [node name="Staff_Card11" parent="StaffCards" instance=ExtResource("6_qky8g")]
 offset_left = 944.0
 offset_top = 784.0
 offset_right = 944.0
 offset_bottom = 784.0
-card = ExtResource("17_3bnqp")
+card = ExtResource("43_oa3ia")
 setIcon = ExtResource("31_stxae")
-cardName = "Snowflake Tree"
+cardName = "Snowflake Reindeer"
 
 [node name="Staff_Card12" parent="StaffCards" instance=ExtResource("6_qky8g")]
 offset_left = 1232.0
 offset_top = 784.0
 offset_right = 1232.0
 offset_bottom = 784.0
-card = ExtResource("18_s5dsk")
+card = ExtResource("44_v1q3b")
 setIcon = ExtResource("31_stxae")
-cardName = "Tree"
+cardName = "Snowflake Santa"
 
 [node name="SwordCards" type="Node2D" parent="."]
 visible = false
@@ -431,108 +455,108 @@ offset_left = 384.0
 offset_top = 272.0
 offset_right = 384.0
 offset_bottom = 272.0
-card = ExtResource("6_tjfx7")
+card = ExtResource("45_lt7wv")
 setIcon = ExtResource("32_tia5c")
-cardName = "Bat"
+cardName = "Candy Candy Cane"
 
 [node name="Sword_Card2" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 672.0
 offset_top = 272.0
 offset_right = 672.0
 offset_bottom = 272.0
-card = ExtResource("8_cbbdg")
+card = ExtResource("47_wpay6")
 setIcon = ExtResource("32_tia5c")
-cardName = "Candy Bat"
+cardName = "Candy Cane"
 
 [node name="Sword_Card3" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 968.0
 offset_top = 272.0
 offset_right = 968.0
 offset_bottom = 272.0
-card = ExtResource("9_8ok20")
+card = ExtResource("48_risac")
 setIcon = ExtResource("32_tia5c")
-cardName = "Candy Ghost"
+cardName = "Candy Mistletoe"
 
 [node name="Sword_Card4" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 1256.0
 offset_top = 272.0
 offset_right = 1256.0
 offset_bottom = 272.0
-card = ExtResource("10_6y6t6")
+card = ExtResource("49_v3udt")
 setIcon = ExtResource("32_tia5c")
-cardName = "Candy Pumpkin"
+cardName = "Candy Snowman"
 
 [node name="Sword_Card5" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 384.0
 offset_top = 512.0
 offset_right = 384.0
 offset_bottom = 512.0
-card = ExtResource("11_lgruw")
+card = ExtResource("50_jqjcy")
 setIcon = ExtResource("32_tia5c")
-cardName = "Candy Tree"
+cardName = "Candy Stocking"
 
 [node name="Sword_Card6" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 664.0
 offset_top = 512.0
 offset_right = 664.0
 offset_bottom = 512.0
-card = ExtResource("12_rr1j1")
+card = ExtResource("51_n56k2")
 setIcon = ExtResource("32_tia5c")
-cardName = "Ghost"
+cardName = "Mistletoe"
 
 [node name="Sword_Card7" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 952.0
 offset_top = 512.0
 offset_right = 952.0
 offset_bottom = 512.0
-card = ExtResource("13_7ctsh")
+card = ExtResource("52_fvc8d")
 setIcon = ExtResource("32_tia5c")
-cardName = "Pumpkin"
+cardName = "Snowflake Candy Cane"
 
 [node name="Sword_Card8" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 1240.0
 offset_top = 512.0
 offset_right = 1240.0
 offset_bottom = 512.0
-card = ExtResource("14_fvpnp")
+card = ExtResource("53_6kwfj")
 setIcon = ExtResource("32_tia5c")
-cardName = "Snowflake Bat"
+cardName = "Snowflake Mistletoe"
 
 [node name="Sword_Card9" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 376.0
 offset_top = 784.0
 offset_right = 376.0
 offset_bottom = 784.0
-card = ExtResource("15_lrph0")
+card = ExtResource("54_amhva")
 setIcon = ExtResource("32_tia5c")
-cardName = "Snowflake Ghost"
+cardName = "Snowflake Snowman"
 
 [node name="Sword_Card10" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 664.0
 offset_top = 784.0
 offset_right = 664.0
 offset_bottom = 784.0
-card = ExtResource("16_3ev8n")
+card = ExtResource("55_mch6c")
 setIcon = ExtResource("32_tia5c")
-cardName = "Snowflake Pumpkin"
+cardName = "Snowflake Stocking"
 
 [node name="Sword_Card11" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 944.0
 offset_top = 784.0
 offset_right = 944.0
 offset_bottom = 784.0
-card = ExtResource("17_3bnqp")
+card = ExtResource("56_ynhnm")
 setIcon = ExtResource("32_tia5c")
-cardName = "Snowflake Tree"
+cardName = "Snowman"
 
 [node name="Sword_Card12" parent="SwordCards" instance=ExtResource("6_qky8g")]
 offset_left = 1232.0
 offset_top = 784.0
 offset_right = 1232.0
 offset_bottom = 784.0
-card = ExtResource("18_s5dsk")
+card = ExtResource("57_vmx7w")
 setIcon = ExtResource("32_tia5c")
-cardName = "Tree"
+cardName = "Stocking"
 
 [node name="CabinetCloseSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("34_na6as")

@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/start_menu.gd" id="1_n0er7"]
 [ext_resource type="Texture2D" uid="uid://bs1gsfxi6lcvo" path="res://Assets/Art/Background.png" id="2_ov08x"]
 [ext_resource type="Texture2D" uid="uid://cjajjgcfs42x7" path="res://Assets/Art/Logo_Beeg.png" id="2_sc3jh"]
-[ext_resource type="AudioStream" uid="uid://60ittxrxii0m" path="res://Assets/Music/Button_Click.mp3" id="3_mqjkk"]
+[ext_resource type="AudioStream" uid="uid://b11x76aq4b6bw" path="res://Assets/Music/Button_Click.mp3" id="3_mqjkk"]
 
 [node name="StartMenu" type="Node2D"]
 script = ExtResource("1_n0er7")

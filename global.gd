@@ -25,7 +25,31 @@ const possibleCards = [
 	"Snowflake Spider",
 	"Snowflake Witch",
 	"Spider",
-	"Witch"
+	"Witch",
+	"Candy Elf",
+	"Candy Gift",
+	"Candy Reindeer",
+	"Candy Santa",
+	"Elf",
+	"Gift",
+	"Reindeer",
+	"Santa",
+	"Snowflake Elf",
+	"Snowflake Gift",
+	"Snowflake Reindeer",
+	"Snowflake Santa",
+	"Candy Candy Cane",
+	"Candy Cane",
+	"Candy Mistletoe",
+	"Candy Snowman",
+	"Candy Stocking",
+	"Mistletoe",
+	"Snowflake Candy Cane",
+	"Snowflake Mistletoe",
+	"Snowflake Snowman",
+	"Snowflake Stocking",
+	"Snowman",
+	"Stocking"
 ]
 
 const cardToSetIconDict = {
@@ -55,7 +79,35 @@ const cardToSetIconDict = {
 	"Snowflake Spider": "res://Assets/Art/Icons/Set_Shield.png",
 	"Snowflake Witch": "res://Assets/Art/Icons/Set_Shield.png",
 	"Spider": "res://Assets/Art/Icons/Set_Shield.png",
-	"Witch": "res://Assets/Art/Icons/Set_Shield.png"
+	"Witch": "res://Assets/Art/Icons/Set_Shield.png",
+	
+	# Staff
+	"Candy Elf": "res://Assets/Art/Icons/Set_Staff.png",
+	"Candy Gift": "res://Assets/Art/Icons/Set_Staff.png",
+	"Candy Reindeer": "res://Assets/Art/Icons/Set_Staff.png",
+	"Candy Santa": "res://Assets/Art/Icons/Set_Staff.png",
+	"Elf": "res://Assets/Art/Icons/Set_Staff.png",
+	"Gift": "res://Assets/Art/Icons/Set_Staff.png",
+	"Reindeer": "res://Assets/Art/Icons/Set_Staff.png",
+	"Santa": "res://Assets/Art/Icons/Set_Staff.png",
+	"Snowflake Elf": "res://Assets/Art/Icons/Set_Staff.png",
+	"Snowflake Gift": "res://Assets/Art/Icons/Set_Staff.png",
+	"Snowflake Reindeer": "res://Assets/Art/Icons/Set_Staff.png",
+	"Snowflake Santa": "res://Assets/Art/Icons/Set_Staff.png",
+	
+	# Sword
+	"Candy Candy Cane": "res://Assets/Art/Icons/Set_Sword.png",
+	"Candy Cane": "res://Assets/Art/Icons/Set_Sword.png",
+	"Candy Mistletoe": "res://Assets/Art/Icons/Set_Sword.png",
+	"Candy Snowman": "res://Assets/Art/Icons/Set_Sword.png",
+	"Candy Stocking": "res://Assets/Art/Icons/Set_Sword.png",
+	"Mistletoe": "res://Assets/Art/Icons/Set_Sword.png",
+	"Snowflake Candy Cane": "res://Assets/Art/Icons/Set_Sword.png",
+	"Snowflake Mistletoe": "res://Assets/Art/Icons/Set_Sword.png",
+	"Snowflake Snowman": "res://Assets/Art/Icons/Set_Sword.png",
+	"Snowflake Stocking": "res://Assets/Art/Icons/Set_Sword.png",
+	"Snowman": "res://Assets/Art/Icons/Set_Sword.png",
+	"Stocking": "res://Assets/Art/Icons/Set_Sword.png"
 }
 
 var firstTimePlaying = true

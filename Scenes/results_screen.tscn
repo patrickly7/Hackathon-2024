@@ -1,9 +1,9 @@
-[gd_scene load_steps=15 format=3 uid="uid://buthx4mag0w5"]
+[gd_scene load_steps=21 format=3 uid="uid://buthx4mag0w5"]
 
 [ext_resource type="Script" path="res://Scripts/results_screen.gd" id="1_0kxqi"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_h6jqq"]
 [ext_resource type="Texture2D" uid="uid://bs1gsfxi6lcvo" path="res://Assets/Art/Background.png" id="2_cbcp0"]
-[ext_resource type="AudioStream" uid="uid://60ittxrxii0m" path="res://Assets/Music/Button_Click.mp3" id="3_6uh0a"]
+[ext_resource type="AudioStream" uid="uid://b11x76aq4b6bw" path="res://Assets/Music/Button_Click.mp3" id="3_6uh0a"]
 [ext_resource type="Texture2D" uid="uid://bhsmf18qiffv" path="res://Assets/Art/Ranks/S_Rank.png" id="4_heltk"]
 [ext_resource type="Texture2D" uid="uid://te18fgdfvyoe" path="res://Assets/Art/Ranks/A_Rank.png" id="5_l65g7"]
 [ext_resource type="Texture2D" uid="uid://brfpm3r0xl5c2" path="res://Assets/Art/Ranks/B_Rank.png" id="6_cmfhd"]
@@ -14,6 +14,12 @@
 [ext_resource type="AudioStream" uid="uid://7tqxipdaj8i3" path="res://Assets/Music/Result_2.mp3" id="12_xj0sk"]
 [ext_resource type="AudioStream" uid="uid://cmastxp5eqom3" path="res://Assets/Music/Result_3.mp3" id="13_ndecn"]
 [ext_resource type="AudioStream" uid="uid://1ku637p0804r" path="res://Assets/Music/Result_4.mp3" id="14_aofbh"]
+[ext_resource type="AudioStream" uid="uid://dv7p3agiidps0" path="res://Assets/Music/Rank_S.mp3" id="15_4lnph"]
+[ext_resource type="AudioStream" uid="uid://cy1um5ws5kiyt" path="res://Assets/Music/Rank_A.mp3" id="16_pulh4"]
+[ext_resource type="AudioStream" uid="uid://uqkhay205s3n" path="res://Assets/Music/Rank_B.mp3" id="17_0k0mk"]
+[ext_resource type="AudioStream" uid="uid://cootph10necls" path="res://Assets/Music/Rank_C.mp3" id="18_ls8ii"]
+[ext_resource type="AudioStream" uid="uid://bmcntpu0h6sq1" path="res://Assets/Music/Rank_D.mp3" id="19_2o7ub"]
+[ext_resource type="AudioStream" uid="uid://8frag2c21ehc" path="res://Assets/Music/Rank_F.mp3" id="20_pt3lu"]
 
 [node name="ResultsScreen" type="Control"]
 layout_mode = 3
@@ -161,6 +167,24 @@ stream = ExtResource("13_ndecn")
 
 [node name="FourthResultSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("14_aofbh")
+
+[node name="SRankSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_4lnph")
+
+[node name="ARankSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_pulh4")
+
+[node name="BRankSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_0k0mk")
+
+[node name="CRankSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("18_ls8ii")
+
+[node name="DRankSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("19_2o7ub")
+
+[node name="FRankSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("20_pt3lu")
 
 [connection signal="pressed" from="PlayAgainButton" to="." method="_on_play_again_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
