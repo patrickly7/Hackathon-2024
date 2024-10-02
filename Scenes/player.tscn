@@ -10,7 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://dgp1py7jt1mnl" path="res://Assets/Art/Character/Speech_Bubble.png" id="8_0lg1v"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="9_byy3g"]
 [ext_resource type="AudioStream" uid="uid://bbw5618y82boa" path="res://Assets/Music/Drawer_Open_Short.mp3" id="10_wbgo7"]
-[ext_resource type="AudioStream" uid="uid://bhr2qfub450ln" path="res://Assets/Music/Ship_One_Package.mp3" id="11_pncme"]
+[ext_resource type="AudioStream" uid="uid://yggr0i7rmx6i" path="res://Assets/Music/Ship_Truck.mp3" id="11_u8pw6"]
 [ext_resource type="AudioStream" uid="uid://dn51q5mnl451f" path="res://Assets/Music/Rong.mp3" id="12_vbk3j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_smtxl"]
@@ -87,7 +87,7 @@ vertical_alignment = 1
 stream = ExtResource("10_wbgo7")
 
 [node name="ShippingSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("11_pncme")
+stream = ExtResource("11_u8pw6")
 
 [node name="WrongSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_vbk3j")
