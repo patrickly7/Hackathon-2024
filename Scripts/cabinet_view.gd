@@ -29,5 +29,8 @@ func _ready():
 		$SwordCards.show()
 
 func _on_close_button_pressed():
+	close_cabinet()
+	
+func close_cabinet():
 	$CabinetCloseSound.play()
 	hide()

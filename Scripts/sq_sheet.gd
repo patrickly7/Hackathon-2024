@@ -119,7 +119,7 @@ func generateSQ():
 		while Global.cardsToPull.has(cardName):
 			cardName = Global.possibleCards[randi() % possibleCardsLen]
 		
-		var quantity = rng.randi_range(1, 3)
+		var quantity = rng.randi_range(1, 4)
 		
 		if i == 0:
 			$SQItems/SQItem1/CardName.text = cardName

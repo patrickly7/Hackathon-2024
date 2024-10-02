@@ -112,6 +112,8 @@ const cardToSetIconDict = {
 
 var firstTimePlaying = true
 
+var isPlayerPaused = false
+
 var cardsToPull = []
 var cardsToPullQuantities = []
 var cardsPulled = []

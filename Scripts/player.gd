@@ -20,6 +20,9 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if Global.isPlayerPaused:
+		return
+	
 	if touchingCabinet:
 		$SpeechBubble.show()
 		$SpeechBubbleLabel.show()

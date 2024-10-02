@@ -20,7 +20,9 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if (timer == 18):
+		$BGMusic.stop()
+		$EndGameBGMusic.play()
 
 func game_over():
 	get_tree().change_scene_to_file("res://Scenes/results_screen.tscn")
@@ -110,12 +112,12 @@ func show_stations():
 	$BoxStation.show()
 
 func _on_cabinet_view_hidden():
-	# TBD - add a way to unfreeze player when closing cabinet
+	Global.isPlayerPaused = false
 	show_buttons()
 
 
 func _on_player_open_cabinet(cabinetNum):
-	# TBD - add a way to freeze player when opening cabinet
+	Global.isPlayerPaused = true
 	if cabinetNum == 1:
 		$CabinetView.show()
 	elif cabinetNum == 2:

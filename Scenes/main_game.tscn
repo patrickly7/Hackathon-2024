@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://2qrnnjfd26oc"]
+[gd_scene load_steps=26 format=3 uid="uid://2qrnnjfd26oc"]
 
 [ext_resource type="Script" path="res://Scripts/main_game.gd" id="1_bf2dl"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_m6rd2"]
@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://tlhiaal4n5cx" path="res://Assets/Art/Icons/Set_Sword.png" id="12_ql2yy"]
 [ext_resource type="AudioStream" uid="uid://dj3e0nuw5c40w" path="res://Assets/Music/ShipIt_BGM.mp3" id="17_euxab"]
 [ext_resource type="AudioStream" uid="uid://b11x76aq4b6bw" path="res://Assets/Music/Button_Click.mp3" id="18_2088j"]
+[ext_resource type="AudioStream" uid="uid://ukjjociqv222" path="res://Assets/Music/Ambiance/ShipIt_BGM_End.mp3" id="25_mxkpt"]
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_bf2dl")
@@ -177,6 +178,9 @@ stream = ExtResource("17_euxab")
 
 [node name="ButtonClickSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("18_2088j")
+
+[node name="EndGameBGMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("25_mxkpt")
 
 [connection signal="pressed" from="HelpButton" to="." method="_on_help_button_pressed"]
 [connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
