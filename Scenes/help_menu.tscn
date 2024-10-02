@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://dqy1037b3h5uq"]
+[gd_scene load_steps=10 format=3 uid="uid://dqy1037b3h5uq"]
 
 [ext_resource type="Script" path="res://Scripts/HelpMenu.gd" id="1_4kxfj"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="2_qvyfw"]
+[ext_resource type="Texture2D" uid="uid://bhj5yemv20qob" path="res://Assets/Art/Help/Arrow_Left.png" id="3_v4dma"]
+[ext_resource type="Texture2D" uid="uid://lam7x0w208rp" path="res://Assets/Art/Help/Circle.png" id="4_cp7ux"]
+[ext_resource type="Texture2D" uid="uid://ctcs0sqiq0bhd" path="res://Assets/Art/Help/Arrow_Right.png" id="5_6ht5r"]
+[ext_resource type="Texture2D" uid="uid://br783mbyincco" path="res://Assets/Art/Icons/Set_Bow.png" id="6_whki5"]
+[ext_resource type="Texture2D" uid="uid://c3j24a53d75a0" path="res://Assets/Art/Icons/Set_Shield.png" id="7_ogfv1"]
+[ext_resource type="Texture2D" uid="uid://e1yjqkn5vmq5" path="res://Assets/Art/Icons/Set_Staff.png" id="8_504er"]
+[ext_resource type="Texture2D" uid="uid://clrkrdqytok6b" path="res://Assets/Art/Icons/Set_Sword.png" id="9_ugsxw"]
 
 [node name="HelpMenu" type="Control"]
 process_mode = 3
@@ -18,26 +25,223 @@ layout_mode = 0
 offset_right = 1924.0
 offset_bottom = 1081.0
 color = Color(0, 0, 0, 0.294118)
+metadata/_edit_group_ = true
 
-[node name="Title" type="Label" parent="."]
-layout_mode = 0
-offset_left = 3.0
-offset_top = 45.0
-offset_right = 1923.0
-offset_bottom = 190.0
-theme_override_fonts/font = ExtResource("2_qvyfw")
-theme_override_font_sizes/font_size = 128
-text = "HELP"
-horizontal_alignment = 1
+[node name="ColorRect2" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.242
+anchor_top = 0.062
+anchor_right = 0.758
+anchor_bottom = 0.938
+offset_left = -16.64
+offset_top = 0.0399933
+offset_right = 16.64
+offset_bottom = -0.0400391
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.111197, 0.111197, 0.111197, 1)
 
-[node name="CloseButton" type="Button" parent="."]
-layout_mode = 0
-offset_left = 1581.0
-offset_top = 39.0
-offset_right = 1885.0
-offset_bottom = 163.0
+[node name="CloseButton" type="Button" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -248.0
+offset_top = 21.0
+offset_right = -25.0
+offset_bottom = 106.0
+grow_horizontal = 0
 theme_override_fonts/font = ExtResource("2_qvyfw")
 theme_override_font_sizes/font_size = 64
 text = "Close"
 
-[connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
+[node name="LeftArrow" type="TextureButton" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 192.0
+offset_top = 757.0
+offset_right = 308.0
+offset_bottom = 901.0
+texture_normal = ExtResource("3_v4dma")
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 320.0
+offset_top = 765.0
+offset_right = 436.0
+offset_bottom = 908.0
+texture = ExtResource("4_cp7ux")
+
+[node name="TextureRect2" type="TextureRect" parent="ColorRect2"]
+offset_left = 448.0
+offset_top = 765.0
+offset_right = 564.0
+offset_bottom = 908.0
+texture = ExtResource("4_cp7ux")
+
+[node name="TextureRect3" type="TextureRect" parent="ColorRect2"]
+offset_left = 576.0
+offset_top = 765.0
+offset_right = 692.0
+offset_bottom = 908.0
+texture = ExtResource("4_cp7ux")
+
+[node name="RightArrow" type="TextureButton" parent="ColorRect2"]
+layout_mode = 0
+offset_left = 720.0
+offset_top = 757.0
+offset_right = 836.0
+offset_bottom = 901.0
+texture_normal = ExtResource("5_6ht5r")
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 0
+offset_top = 105.0
+offset_right = 1920.0
+offset_bottom = 250.0
+theme_override_fonts/font = ExtResource("2_qvyfw")
+theme_override_font_sizes/font_size = 128
+text = "HELP!"
+horizontal_alignment = 1
+
+[node name="IntroPage" type="Node2D" parent="."]
+visible = false
+
+[node name="Intro" type="Label" parent="IntroPage"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 425.5
+offset_right = 1920.0
+offset_bottom = 654.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_qvyfw")
+theme_override_font_sizes/font_size = 128
+text = "How to
+Ship It"
+horizontal_alignment = 1
+
+[node name="ControlsPage" type="Node2D" parent="."]
+visible = false
+
+[node name="Controls" type="Label" parent="ControlsPage"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 467.0
+offset_top = 264.0
+offset_right = 1457.0
+offset_bottom = 786.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_qvyfw")
+theme_override_font_sizes/font_size = 50
+text = "WASD 		--		 Move
+
+
+Space Bar --  Interact
+
+
+Left Click --  Pull Card
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SetsPage" type="Node2D" parent="."]
+
+[node name="Sets" type="Label" parent="SetsPage"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 448.0
+offset_top = 256.0
+offset_right = 1312.0
+offset_bottom = 832.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_qvyfw")
+theme_override_font_sizes/font_size = 60
+text = "Cabinet 1 --
+
+Cabinet 2 --
+
+Cabinet 3 --
+
+Cabinet 4 --"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BowSetIconBase" type="ColorRect" parent="SetsPage"]
+offset_left = 1152.0
+offset_top = 328.0
+offset_right = 1256.0
+offset_bottom = 432.0
+
+[node name="BowSetIcon" type="Sprite2D" parent="SetsPage/BowSetIconBase"]
+position = Vector2(52, 52)
+scale = Vector2(0.40625, 0.40625)
+texture = ExtResource("6_whki5")
+
+[node name="ColorRect2" type="ColorRect" parent="SetsPage"]
+offset_left = 1152.0
+offset_top = 440.0
+offset_right = 1256.0
+offset_bottom = 544.0
+
+[node name="BowSetIcon" type="Sprite2D" parent="SetsPage/ColorRect2"]
+position = Vector2(52, 52)
+scale = Vector2(0.40625, 0.40625)
+texture = ExtResource("7_ogfv1")
+
+[node name="ColorRect3" type="ColorRect" parent="SetsPage"]
+offset_left = 1152.0
+offset_top = 552.0
+offset_right = 1256.0
+offset_bottom = 656.0
+
+[node name="BowSetIcon" type="Sprite2D" parent="SetsPage/ColorRect3"]
+position = Vector2(52, 52)
+scale = Vector2(0.40625, 0.40625)
+texture = ExtResource("8_504er")
+
+[node name="ColorRect4" type="ColorRect" parent="SetsPage"]
+offset_left = 1152.0
+offset_top = 664.0
+offset_right = 1256.0
+offset_bottom = 768.0
+
+[node name="BowSetIcon" type="Sprite2D" parent="SetsPage/ColorRect4"]
+position = Vector2(52, 52)
+scale = Vector2(0.40625, 0.40625)
+texture = ExtResource("9_ugsxw")
+
+[node name="PackageTypesPage" type="Node2D" parent="."]
+visible = false
+
+[node name="PackageTypes" type="Label" parent="PackageTypesPage"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 425.5
+offset_right = 1920.0
+offset_bottom = 654.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_qvyfw")
+theme_override_font_sizes/font_size = 128
+text = "How to
+Ship It"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="ColorRect2/CloseButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="ColorRect2/LeftArrow" to="." method="_on_left_arrow_pressed"]
+[connection signal="pressed" from="ColorRect2/RightArrow" to="." method="_on_right_arrow_pressed"]
