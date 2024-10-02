@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dyr8qd11despu"]
 
-[ext_resource type="Texture2D" uid="uid://dnnjciwy3581m" path="res://Assets/Art/Graybox_Cabinet_Outside.png" id="1_nd0c5"]
 [ext_resource type="Script" path="res://Scripts/cabinet.gd" id="1_reumo"]
+[ext_resource type="Texture2D" uid="uid://bn371nsd8ksc5" path="res://Assets/Art/Cabinet_Outside.png" id="2_gaa76"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_my517"]
 size = Vector2(192, 208)
@@ -14,7 +14,7 @@ metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("1_nd0c5")
+texture = ExtResource("2_gaa76")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_my517")

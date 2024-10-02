@@ -1,8 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://buthx4mag0w5"]
+[gd_scene load_steps=10 format=3 uid="uid://buthx4mag0w5"]
 
 [ext_resource type="Script" path="res://Scripts/results_screen.gd" id="1_0kxqi"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_h6jqq"]
 [ext_resource type="AudioStream" uid="uid://b11x76aq4b6bw" path="res://Assets/Music/Button_Click.mp3" id="3_6uh0a"]
+[ext_resource type="Texture2D" uid="uid://bhsmf18qiffv" path="res://Assets/Art/Ranks/S_Rank.png" id="4_heltk"]
+[ext_resource type="Texture2D" uid="uid://te18fgdfvyoe" path="res://Assets/Art/Ranks/A_Rank.png" id="5_l65g7"]
+[ext_resource type="Texture2D" uid="uid://brfpm3r0xl5c2" path="res://Assets/Art/Ranks/B_Rank.png" id="6_cmfhd"]
+[ext_resource type="Texture2D" uid="uid://bch0742wa8vma" path="res://Assets/Art/Ranks/C_Rank.png" id="7_k0vuf"]
+[ext_resource type="Texture2D" uid="uid://bxu7on7jrb713" path="res://Assets/Art/Ranks/D_Rank.png" id="8_q0jyh"]
+[ext_resource type="Texture2D" uid="uid://bjgglc026ooyx" path="res://Assets/Art/Ranks/F_Rank.png" id="9_tmlrb"]
 
 [node name="ResultsScreen" type="Control"]
 layout_mode = 3
@@ -92,6 +98,42 @@ text = "Quit"
 
 [node name="ButtonClickSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_6uh0a")
+
+[node name="SRank" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1600, 450)
+scale = Vector2(1.95313, 1.95313)
+texture = ExtResource("4_heltk")
+
+[node name="ARank" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1600, 450)
+scale = Vector2(1.95313, 1.95313)
+texture = ExtResource("5_l65g7")
+
+[node name="BRank" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1600, 450)
+scale = Vector2(1.95313, 1.95313)
+texture = ExtResource("6_cmfhd")
+
+[node name="CRank" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1600, 450)
+scale = Vector2(1.95313, 1.95313)
+texture = ExtResource("7_k0vuf")
+
+[node name="DRank" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1600, 450)
+scale = Vector2(1.95313, 1.95313)
+texture = ExtResource("8_q0jyh")
+
+[node name="FRank" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1600, 450)
+scale = Vector2(1.95313, 1.95313)
+texture = ExtResource("9_tmlrb")
 
 [connection signal="pressed" from="PlayAgainButton" to="." method="_on_play_again_button_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

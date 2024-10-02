@@ -33,7 +33,7 @@
 [ext_resource type="Texture2D" uid="uid://d126j3x57yk0l" path="res://Assets/Art/Cards/Card_Witch.png" id="30_anxu6"]
 [ext_resource type="Texture2D" uid="uid://qbpbpoupd7e7" path="res://Assets/Art/Icons/Set_Staff.png" id="31_stxae"]
 [ext_resource type="Texture2D" uid="uid://tlhiaal4n5cx" path="res://Assets/Art/Icons/Set_Sword.png" id="32_tia5c"]
-[ext_resource type="AudioStream" uid="uid://8a48t0arpxqs" path="res://Assets/Music/Drawer_Close.mp3" id="36_qgmq6"]
+[ext_resource type="AudioStream" uid="uid://djvreudr8jmx0" path="res://Assets/Music/Drawer_Close_Short.mp3" id="34_na6as"]
 
 [node name="CabinetView" type="Control"]
 layout_mode = 3
@@ -535,7 +535,7 @@ setIcon = ExtResource("32_tia5c")
 cardName = "Tree"
 
 [node name="CabinetCloseSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("36_qgmq6")
+stream = ExtResource("34_na6as")
 volume_db = 8.0
 
 [connection signal="pressed" from="CloseButton" to="." method="_on_close_button_pressed"]
