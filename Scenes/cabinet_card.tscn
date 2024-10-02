@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dtfljmvlp50qf"]
+[gd_scene load_steps=5 format=3 uid="uid://5omwyibg5x1c"]
 
 [ext_resource type="Script" path="res://Scripts/cabinet_card.gd" id="1_wcb8b"]
 [ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="2_8ysl5"]
