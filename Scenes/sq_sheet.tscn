@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="4_nhrbk"]
 [ext_resource type="Texture2D" uid="uid://ce4f0cqxyq4gj" path="res://Assets/Art/SqSheet_Checkmark.png" id="5_d6pdm"]
 [ext_resource type="Texture2D" uid="uid://dqg7dhpftwoc" path="res://Assets/Art/Stamp.png" id="6_c2yaw"]
-[ext_resource type="AudioStream" uid="uid://dsbh2ngxr1r8o" path="res://Assets/Music/Fold_SQ_sheet.mp3" id="6_q018w"]
+[ext_resource type="AudioStream" uid="uid://dn54cjn017phy" path="res://Assets/Music/Fold_SQ_sheet_short.mp3" id="7_keexw"]
 
 [node name="SQSheet" type="Control"]
 layout_mode = 3
@@ -206,7 +206,7 @@ theme_override_font_sizes/font_size = 64
 text = "<"
 
 [node name="SQSheetHideShowSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("6_q018w")
+stream = ExtResource("7_keexw")
 
 [connection signal="pressed" from="HideButton" to="." method="_on_hide_button_pressed"]
 [connection signal="pressed" from="ShowButton" to="." method="_on_show_button_pressed"]
