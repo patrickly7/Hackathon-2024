@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dxwxnx7pqbjhh" path="res://Assets/Art/SqSheet.png" id="1_8q8h3"]
 [ext_resource type="Script" path="res://Scripts/sq_sheet.gd" id="1_s8lbn"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="2_4qbwk"]
-[ext_resource type="Texture2D" uid="uid://br783mbyincco" path="res://Assets/Art/Icons/Set_Bow.png" id="4_nhrbk"]
+[ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="4_nhrbk"]
 [ext_resource type="Texture2D" uid="uid://ce4f0cqxyq4gj" path="res://Assets/Art/SqSheet_Checkmark.png" id="5_d6pdm"]
 [ext_resource type="Texture2D" uid="uid://dqg7dhpftwoc" path="res://Assets/Art/Stamp.png" id="6_c2yaw"]
 [ext_resource type="AudioStream" uid="uid://dn54cjn017phy" path="res://Assets/Music/Fold_SQ_sheet_short.mp3" id="7_keexw"]

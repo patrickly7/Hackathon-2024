@@ -34,16 +34,22 @@ func calculate_rank():
 	
 	if correctCards >= 60 and sqsCompleted >= 9 and penalties == 0:
 		$SRank.show()
+		$SRankSound.play()
 	elif correctCards >= 50 and sqsCompleted >= 7 and penalties <= 2:
 		$ARank.show()
+		$ARankSound.play()
 	elif correctCards >= 40 and sqsCompleted >= 6 and penalties <= 4:
 		$BRank.show()
+		$BRankSound.play()
 	elif correctCards >= 30 and sqsCompleted >= 5 and penalties <= 6:
 		$CRank.show()
+		$CRankSound.play()
 	elif correctCards >= 20 and sqsCompleted >= 3 and penalties <= 10:
 		$DRank.show()
+		$DRankSound.play()
 	else:
 		$FRank.show()
+		$FRankSound.play()
 
 func _on_quit_button_pressed():
 	$ButtonClickSound.play()

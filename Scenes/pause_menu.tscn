@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5apf8dd8qyw4"]
+[gd_scene load_steps=4 format=3 uid="uid://de1r0bx54exk2"]
 
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_jtxnp"]
 [ext_resource type="Script" path="res://Scripts/pause_menu.gd" id="1_qj5hr"]
-[ext_resource type="AudioStream" uid="uid://60ittxrxii0m" path="res://Assets/Music/Button_Click.mp3" id="3_1dslj"]
+[ext_resource type="AudioStream" uid="uid://b11x76aq4b6bw" path="res://Assets/Music/Button_Click.mp3" id="3_1dslj"]
 
 [node name="PauseMenu" type="Control"]
 process_mode = 3
