@@ -7,12 +7,14 @@ func _on_close_button_pressed():
 	hide()
 
 func _on_left_arrow_pressed():
-	page -= 1
+	if page > 0:
+		page -= 1
 	change_page()
 
 
 func _on_right_arrow_pressed():
-	page += 1
+	if page < 3:
+		page += 1
 	change_page()
 
 func change_page():
