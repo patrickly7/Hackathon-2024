@@ -91,20 +91,44 @@ texture = ExtResource("10_3smwf")
 
 [node name="Timer" type="Timer" parent="."]
 
-[node name="TimerLabel" type="Label" parent="."]
-offset_left = 105.0
-offset_top = 39.0
-offset_right = 276.0
-offset_bottom = 96.0
+[node name="TimerLabel2" type="Label" parent="."]
+offset_left = 120.0
+offset_top = 37.0
+offset_right = 284.0
+offset_bottom = 99.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_m6rd2")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 70
 text = "150"
+
+[node name="TimerLabel" type="Label" parent="."]
+offset_left = 113.0
+offset_top = 37.0
+offset_right = 284.0
+offset_bottom = 99.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_m6rd2")
+theme_override_font_sizes/font_size = 70
+text = "150"
+
+[node name="Message2" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 8.0
+offset_right = 1920.0
+offset_bottom = 397.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_m6rd2")
+theme_override_font_sizes/font_size = 96
+text = "Get Ready to Start Your Shift!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Message" type="Label" parent="."]
 offset_right = 1920.0
 offset_bottom = 397.0
 theme_override_fonts/font = ExtResource("1_m6rd2")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 96
 text = "Get Ready to Start Your Shift!"
 horizontal_alignment = 1
 vertical_alignment = 1

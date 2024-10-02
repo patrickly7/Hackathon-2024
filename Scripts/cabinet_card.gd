@@ -15,6 +15,7 @@ func _on_card_pressed():
 	# Check if you even need to pull this card
 	var currIndex = Global.getIndexInCardsToPull(cardName)
 	if currIndex == -1:
+		$WrongCardSound.play()
 		Global.wrongCardsPulled += 1
 		print("NOT A CARD YOU NEED TO PULL")
 		return
@@ -23,6 +24,7 @@ func _on_card_pressed():
 	var requiredQty = Global.getQuantityInCardsToPull(cardName)
 	var qtyPulled = Global.getQuantityInCardsPulled(cardName)
 	if requiredQty == qtyPulled:
+		$WrongCardSound.play()
 		Global.wrongCardsPulled += 1
 		print("YOU ALREADY HAVE ENOUGH OF THIS CARD")
 		return
@@ -39,7 +41,20 @@ func _on_card_pressed():
 	Global.correctCardsPulled += 1
 	print(Global.cardsPulled, Global.cardsPulledQuantities)
 	
-	$CardPullSound.play()
+	var isComplete = true
+	for i in range(len(Global.cardsToPull)):
+		var card = Global.cardsToPull[i]
+		var expectedQty = Global.getQuantityInCardsToPull(card)
+		var actualQty = Global.getQuantityInCardsPulled(card)
+		
+		if expectedQty != actualQty:
+			isComplete = false
+			break
+	
+	if isComplete:
+		$SQCompleteStampSound.play()
+	else:
+		$CardPullSound.play()
 
 func _on_card_mouse_entered():
 	$SetIcon.show()

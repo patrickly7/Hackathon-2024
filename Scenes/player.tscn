@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cqgrlms77vnu3"]
+[gd_scene load_steps=15 format=3 uid="uid://cqgrlms77vnu3"]
 
 [ext_resource type="Script" path="res://Scripts/player.gd" id="1_t3mnq"]
 [ext_resource type="Texture2D" uid="uid://ejsfkaaaelu1" path="res://Assets/Art/Character/Levi_Front.png" id="2_5wto8"]
@@ -11,6 +11,7 @@
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="9_byy3g"]
 [ext_resource type="AudioStream" uid="uid://bbw5618y82boa" path="res://Assets/Music/Drawer_Open_Short.mp3" id="10_wbgo7"]
 [ext_resource type="AudioStream" uid="uid://bhr2qfub450ln" path="res://Assets/Music/Ship_One_Package.mp3" id="11_pncme"]
+[ext_resource type="AudioStream" uid="uid://dn51q5mnl451f" path="res://Assets/Music/Rong.mp3" id="12_vbk3j"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_smtxl"]
 animations = [{
@@ -87,6 +88,9 @@ stream = ExtResource("10_wbgo7")
 
 [node name="ShippingSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("11_pncme")
+
+[node name="WrongSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_vbk3j")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

@@ -45,10 +45,11 @@ func _on_timer_timeout():
 	
 func update_time(time):
 	$TimerLabel.text = str(time)
+	$TimerLabel2.text = str(time)
 	
 func update_message(message):
 	$Message.text = message
-
+	$Message2.text = message
 
 func _on_help_button_pressed():
 	$ButtonClickSound.play()

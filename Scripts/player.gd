@@ -42,6 +42,7 @@ func _process(delta):
 			if currentStation == "Envelope":
 				Global.currentSQ = ""
 			else:
+				$WrongSound.play()
 				Global.wrongShippingUsed += 1
 				print("NO ENVELOPE! THIS IS THE WRONG SHIPPING STATION!")
 				return
@@ -49,6 +50,7 @@ func _process(delta):
 			if currentStation == "BubbleMailer":
 				Global.currentSQ = ""
 			else:
+				$WrongSound.play()
 				Global.wrongShippingUsed += 1
 				print("NO BUBBLE MAILER! THIS IS THE WRONG SHIPPING STATION!")
 				return
@@ -56,6 +58,7 @@ func _process(delta):
 			if currentStation == "Box":
 				Global.currentSQ = ""
 			else:
+				$WrongSound.play()
 				Global.wrongShippingUsed += 1
 				print("NO BOX! THIS IS THE WRONG SHIPPING STATION!")
 				return
@@ -81,7 +84,7 @@ func _process(delta):
 		$AnimatedSprite2D.stop()
 		
 	position += velocity * delta
-	position = position.clamp(Vector2(50, 250), screen_size)
+	position = position.clamp(Vector2(50, 300), screen_size)
 	
 	if velocity.x != 0:
 		$AnimatedSprite2D.animation = "walk"
