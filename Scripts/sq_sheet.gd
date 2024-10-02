@@ -159,6 +159,8 @@ func _on_hide_button_pressed():
 	$SQItems.hide()
 	$Weight.hide()
 	$CompleteStamp.hide()
+	
+	$SQSheetHideShowSound.play()
 
 func _on_show_button_pressed():
 	isHidden = false
@@ -171,3 +173,5 @@ func _on_show_button_pressed():
 	$SQItems.show()
 	$Weight.show()
 	$CompleteStamp.show()
+	
+	$SQSheetHideShowSound.play()

@@ -38,7 +38,8 @@ func _on_card_pressed():
 		
 	Global.correctCardsPulled += 1
 	print(Global.cardsPulled, Global.cardsPulledQuantities)
-
+	
+	$CardPullSound.play()
 
 func _on_card_mouse_entered():
 	$SetIcon.show()

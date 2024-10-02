@@ -1,21 +1,23 @@
-[gd_scene load_steps=17 format=3 uid="uid://2qrnnjfd26oc"]
+[gd_scene load_steps=19 format=3 uid="uid://2qrnnjfd26oc"]
 
 [ext_resource type="Script" path="res://Scripts/main_game.gd" id="1_bf2dl"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_m6rd2"]
 [ext_resource type="PackedScene" uid="uid://cqgrlms77vnu3" path="res://Scenes/player.tscn" id="2_qawf6"]
-[ext_resource type="PackedScene" uid="uid://c5apf8dd8qyw4" path="res://Scenes/pause_menu.tscn" id="4_2h1lt"]
+[ext_resource type="PackedScene" uid="uid://de1r0bx54exk2" path="res://Scenes/pause_menu.tscn" id="4_2h1lt"]
 [ext_resource type="PackedScene" uid="uid://dqy1037b3h5uq" path="res://Scenes/help_menu.tscn" id="5_iq3vo"]
 [ext_resource type="Texture2D" uid="uid://r3wspcuenxn3" path="res://Assets/Art/Icons/Shipping_Envelope.png" id="6_gdhfv"]
 [ext_resource type="PackedScene" uid="uid://bg1xrpjfwt311" path="res://Scenes/cabinet_view.tscn" id="6_lugco"]
 [ext_resource type="PackedScene" uid="uid://g1ry4j0al1q8" path="res://Scenes/shipping_station.tscn" id="7_2uex1"]
 [ext_resource type="Texture2D" uid="uid://bn7m5dg50obyh" path="res://Assets/Art/Icons/Shipping_BubbleMailer.png" id="7_s3x42"]
 [ext_resource type="Texture2D" uid="uid://cm7k38othvpi" path="res://Assets/Art/Icons/Shipping_Package.png" id="8_nfy0v"]
-[ext_resource type="Texture2D" uid="uid://br783mbyincco" path="res://Assets/Art/Icons/Set_Bow.png" id="9_y754s"]
+[ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="9_y754s"]
 [ext_resource type="PackedScene" uid="uid://dyr8qd11despu" path="res://Scenes/cabinet.tscn" id="10_0l61s"]
-[ext_resource type="Texture2D" uid="uid://c3j24a53d75a0" path="res://Assets/Art/Icons/Set_Shield.png" id="10_qfdby"]
-[ext_resource type="Texture2D" uid="uid://e1yjqkn5vmq5" path="res://Assets/Art/Icons/Set_Staff.png" id="11_6ts73"]
+[ext_resource type="Texture2D" uid="uid://dbjfpkgay2y4d" path="res://Assets/Art/Icons/Set_Shield.png" id="10_qfdby"]
+[ext_resource type="Texture2D" uid="uid://qbpbpoupd7e7" path="res://Assets/Art/Icons/Set_Staff.png" id="11_6ts73"]
 [ext_resource type="PackedScene" uid="uid://kqmkdpt7mlw4" path="res://Scenes/sq_sheet.tscn" id="11_a8i3j"]
-[ext_resource type="Texture2D" uid="uid://clrkrdqytok6b" path="res://Assets/Art/Icons/Set_Sword.png" id="12_ql2yy"]
+[ext_resource type="Texture2D" uid="uid://tlhiaal4n5cx" path="res://Assets/Art/Icons/Set_Sword.png" id="12_ql2yy"]
+[ext_resource type="AudioStream" uid="uid://dj3e0nuw5c40w" path="res://Assets/Music/ShipIt_BGM.mp3" id="17_euxab"]
+[ext_resource type="AudioStream" uid="uid://b11x76aq4b6bw" path="res://Assets/Music/Button_Click.mp3" id="18_2088j"]
 
 [node name="MainGame" type="Node2D"]
 script = ExtResource("1_bf2dl")
@@ -131,6 +133,12 @@ visible = false
 
 [node name="HelpMenu" parent="." instance=ExtResource("5_iq3vo")]
 visible = false
+
+[node name="BGMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_euxab")
+
+[node name="ButtonClickSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("18_2088j")
 
 [connection signal="pressed" from="HelpButton" to="." method="_on_help_button_pressed"]
 [connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]

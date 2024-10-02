@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://5omwyibg5x1c"]
+[gd_scene load_steps=6 format=3 uid="uid://dtfljmvlp50qf"]
 
 [ext_resource type="Script" path="res://Scripts/cabinet_card.gd" id="1_wcb8b"]
 [ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="2_8ysl5"]
 [ext_resource type="Texture2D" uid="uid://o1yw784u16tw" path="res://Assets/Art/Cards/Card_Top.png" id="2_ovsdx"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="3_8fu3l"]
+[ext_resource type="AudioStream" uid="uid://dphvt026hy4cg" path="res://Assets/Music/Card_Pull.mp3" id="5_nqyk0"]
 
 [node name="CabinetCard" type="Control"]
 layout_mode = 3
@@ -38,6 +39,9 @@ theme_override_fonts/font = ExtResource("3_8fu3l")
 theme_override_font_sizes/font_size = 12
 text = "Bat"
 vertical_alignment = 1
+
+[node name="CardPullSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_nqyk0")
 
 [connection signal="mouse_entered" from="Card" to="." method="_on_card_mouse_entered"]
 [connection signal="mouse_exited" from="Card" to="." method="_on_card_mouse_exited"]

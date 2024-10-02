@@ -3,7 +3,7 @@ extends Node2D
 var timer = 0
 var score = 0
 
-const totalTime = 180
+const totalTime = 150
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,6 +18,8 @@ func game_over():
 	get_tree().change_scene_to_file("res://Scenes/results_screen.tscn")
 
 func new_game():
+	$BGMusic.play()
+	
 	timer = totalTime
 	$Player.start($StartPosition.position)
 	$Timer.start()
@@ -49,6 +51,9 @@ func update_message(message):
 
 
 func _on_help_button_pressed():
+	$ButtonClickSound.play()
+	await get_tree().create_timer(0.1).timeout
+	
 	get_tree().paused = true
 	
 	hide_buttons()
@@ -56,6 +61,9 @@ func _on_help_button_pressed():
 	$HelpMenu.show()
 
 func _on_pause_button_pressed():
+	$ButtonClickSound.play()
+	await get_tree().create_timer(0.1).timeout
+	
 	get_tree().paused = true
 	
 	hide_buttons()

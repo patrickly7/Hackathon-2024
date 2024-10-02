@@ -33,6 +33,7 @@ func _process(delta):
 		$SpeechBubbleLabel.hide()
 	
 	if Input.is_action_just_pressed("action") and touchingCabinet:
+		$CabinetOpenSound.play()
 		open_cabinet.emit(currentCabinet)
 		return
 		
@@ -60,6 +61,7 @@ func _process(delta):
 				return
 		
 		Global.sqsCompleted += 1
+		$ShippingSound.play()
 		return
 	
 	var velocity = Vector2.ZERO # The player's movement vector.
