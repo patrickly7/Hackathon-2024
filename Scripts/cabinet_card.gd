@@ -6,7 +6,7 @@ extends Control
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$Card.texture_normal = card
+	$Card.texture_hover = card
 	$SetIcon.texture = setIcon
 	$CardName.text = cardName
 
@@ -38,3 +38,11 @@ func _on_card_pressed():
 		
 	Global.correctCardsPulled += 1
 	print(Global.cardsPulled, Global.cardsPulledQuantities)
+
+
+func _on_card_mouse_entered():
+	$SetIcon.show()
+
+
+func _on_card_mouse_exited():
+	$SetIcon.hide()
