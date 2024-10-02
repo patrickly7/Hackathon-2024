@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/results_screen.gd" id="1_0kxqi"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_h6jqq"]
-[ext_resource type="AudioStream" uid="uid://b11x76aq4b6bw" path="res://Assets/Music/Button_Click.mp3" id="3_6uh0a"]
+[ext_resource type="AudioStream" uid="uid://60ittxrxii0m" path="res://Assets/Music/Button_Click.mp3" id="3_6uh0a"]
 
 [node name="ResultsScreen" type="Control"]
 layout_mode = 3
