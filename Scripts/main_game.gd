@@ -7,6 +7,11 @@ const totalTime = 150
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	Global.sqsCompleted = 0
+	Global.wrongShippingUsed = 0
+	Global.wrongCardsPulled = 0
+	Global.correctCardsPulled = 0
+	
 	if Global.firstTimePlaying:
 		open_help_menu()
 	
