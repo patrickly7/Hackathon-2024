@@ -1,8 +1,9 @@
-[gd_scene load_steps=19 format=3 uid="uid://2qrnnjfd26oc"]
+[gd_scene load_steps=21 format=3 uid="uid://2qrnnjfd26oc"]
 
 [ext_resource type="Script" path="res://Scripts/main_game.gd" id="1_bf2dl"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_m6rd2"]
 [ext_resource type="PackedScene" uid="uid://cqgrlms77vnu3" path="res://Scenes/player.tscn" id="2_qawf6"]
+[ext_resource type="Texture2D" uid="uid://bs1gsfxi6lcvo" path="res://Assets/Art/Background.png" id="2_quwgs"]
 [ext_resource type="PackedScene" uid="uid://de1r0bx54exk2" path="res://Scenes/pause_menu.tscn" id="4_2h1lt"]
 [ext_resource type="PackedScene" uid="uid://dqy1037b3h5uq" path="res://Scenes/help_menu.tscn" id="5_iq3vo"]
 [ext_resource type="Texture2D" uid="uid://r3wspcuenxn3" path="res://Assets/Art/Icons/Shipping_Envelope.png" id="6_gdhfv"]
@@ -12,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://cm7k38othvpi" path="res://Assets/Art/Icons/Shipping_Package.png" id="8_nfy0v"]
 [ext_resource type="Texture2D" uid="uid://cdayfa1werqma" path="res://Assets/Art/Icons/Set_Bow.png" id="9_y754s"]
 [ext_resource type="PackedScene" uid="uid://dyr8qd11despu" path="res://Scenes/cabinet.tscn" id="10_0l61s"]
+[ext_resource type="Texture2D" uid="uid://sl0nhyv68uqy" path="res://Assets/Art/Hourglass.png" id="10_3smwf"]
 [ext_resource type="Texture2D" uid="uid://dbjfpkgay2y4d" path="res://Assets/Art/Icons/Set_Shield.png" id="10_qfdby"]
 [ext_resource type="Texture2D" uid="uid://qbpbpoupd7e7" path="res://Assets/Art/Icons/Set_Staff.png" id="11_6ts73"]
 [ext_resource type="PackedScene" uid="uid://kqmkdpt7mlw4" path="res://Scenes/sq_sheet.tscn" id="11_a8i3j"]
@@ -23,9 +25,14 @@
 script = ExtResource("1_bf2dl")
 
 [node name="Background" type="ColorRect" parent="."]
+visible = false
 offset_right = 1920.0
 offset_bottom = 1080.0
 color = Color(0, 0.469186, 0.472614, 1)
+
+[node name="HQBackground" type="Sprite2D" parent="."]
+position = Vector2(960, 544)
+texture = ExtResource("2_quwgs")
 
 [node name="HelpButton" type="Button" parent="."]
 visible = false
@@ -51,16 +58,16 @@ text = "Pause"
 position = Vector2(960, 540)
 
 [node name="Cabinet1" parent="." instance=ExtResource("10_0l61s")]
-position = Vector2(304, 220)
+position = Vector2(304, 280)
 
 [node name="Cabinet2" parent="." instance=ExtResource("10_0l61s")]
-position = Vector2(736, 220)
+position = Vector2(736, 280)
 
 [node name="Cabinet3" parent="." instance=ExtResource("10_0l61s")]
-position = Vector2(1184, 220)
+position = Vector2(1184, 280)
 
 [node name="Cabinet4" parent="." instance=ExtResource("10_0l61s")]
-position = Vector2(1616, 220)
+position = Vector2(1616, 280)
 
 [node name="Player" parent="." instance=ExtResource("2_qawf6")]
 position = Vector2(960, 539)
@@ -78,16 +85,20 @@ packageType = ExtResource("7_s3x42")
 position = Vector2(1616, 920)
 packageType = ExtResource("8_nfy0v")
 
+[node name="Hourglass" type="Sprite2D" parent="."]
+position = Vector2(66, 72)
+texture = ExtResource("10_3smwf")
+
 [node name="Timer" type="Timer" parent="."]
 
 [node name="TimerLabel" type="Label" parent="."]
-offset_left = 97.0
+offset_left = 105.0
 offset_top = 39.0
-offset_right = 268.0
+offset_right = 276.0
 offset_bottom = 96.0
 theme_override_fonts/font = ExtResource("1_m6rd2")
 theme_override_font_sizes/font_size = 64
-text = "180"
+text = "150"
 
 [node name="Message" type="Label" parent="."]
 offset_right = 1920.0
