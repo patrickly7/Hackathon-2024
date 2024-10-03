@@ -1,10 +1,12 @@
-[gd_scene load_steps=7 format=3 uid="uid://bu1aq5y7rime7"]
+[gd_scene load_steps=9 format=3 uid="uid://bu1aq5y7rime7"]
 
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_c521m"]
 [ext_resource type="Script" path="res://Scripts/start_menu.gd" id="1_n0er7"]
 [ext_resource type="Texture2D" uid="uid://bs1gsfxi6lcvo" path="res://Assets/Art/Background.png" id="2_ov08x"]
 [ext_resource type="Texture2D" uid="uid://cjajjgcfs42x7" path="res://Assets/Art/Logo_Beeg.png" id="2_sc3jh"]
 [ext_resource type="AudioStream" uid="uid://60ittxrxii0m" path="res://Assets/Music/Button_Click.mp3" id="3_mqjkk"]
+[ext_resource type="Texture2D" uid="uid://cqr73h5astmff" path="res://Assets/Art/ButtonBackground.png" id="4_vl1qd"]
+[ext_resource type="Texture2D" uid="uid://dos6u6vlkiunl" path="res://Assets/Art/ButtonBackground_Hover.png" id="5_3u757"]
 [ext_resource type="AudioStream" uid="uid://d3ikcldkw7x5j" path="res://Assets/Music/Ambiance/ShipIt_Ambience.mp3" id="6_yhem1"]
 
 [node name="StartMenu" type="Node2D"]
@@ -24,27 +26,48 @@ position = Vector2(936, 320)
 scale = Vector2(0.710937, 0.710937)
 texture = ExtResource("2_sc3jh")
 
-[node name="StartButton" type="Button" parent="."]
+[node name="StartButton" type="TextureButton" parent="."]
 offset_left = 784.0
 offset_top = 564.0
 offset_right = 1138.0
 offset_bottom = 707.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+texture_normal = ExtResource("4_vl1qd")
+texture_hover = ExtResource("5_3u757")
+
+[node name="Label" type="Label" parent="StartButton"]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 21.0
+offset_right = 312.0
+offset_bottom = 123.0
 theme_override_fonts/font = ExtResource("1_c521m")
 theme_override_font_sizes/font_size = 64
 text = "Start"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="QuitButton" type="Button" parent="."]
+[node name="QuitButton" type="TextureButton" parent="."]
 offset_left = 784.0
 offset_top = 783.0
 offset_right = 1138.0
 offset_bottom = 926.0
 size_flags_horizontal = 4
 size_flags_vertical = 4
+texture_normal = ExtResource("4_vl1qd")
+texture_hover = ExtResource("5_3u757")
+
+[node name="Label" type="Label" parent="QuitButton"]
+offset_left = 46.0
+offset_top = 21.0
+offset_right = 312.0
+offset_bottom = 123.0
 theme_override_fonts/font = ExtResource("1_c521m")
 theme_override_font_sizes/font_size = 64
 text = "Quit"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ButtonClickSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_mqjkk")

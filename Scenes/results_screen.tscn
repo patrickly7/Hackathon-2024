@@ -1,10 +1,12 @@
-[gd_scene load_steps=21 format=3 uid="uid://buthx4mag0w5"]
+[gd_scene load_steps=23 format=3 uid="uid://buthx4mag0w5"]
 
 [ext_resource type="Script" path="res://Scripts/results_screen.gd" id="1_0kxqi"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_h6jqq"]
 [ext_resource type="Texture2D" uid="uid://bs1gsfxi6lcvo" path="res://Assets/Art/Background.png" id="2_cbcp0"]
 [ext_resource type="AudioStream" uid="uid://60ittxrxii0m" path="res://Assets/Music/Button_Click.mp3" id="3_6uh0a"]
 [ext_resource type="Texture2D" uid="uid://bhsmf18qiffv" path="res://Assets/Art/Ranks/S_Rank.png" id="4_heltk"]
+[ext_resource type="Texture2D" uid="uid://cqr73h5astmff" path="res://Assets/Art/ButtonBackground.png" id="4_i4fgy"]
+[ext_resource type="Texture2D" uid="uid://dos6u6vlkiunl" path="res://Assets/Art/ButtonBackground_Hover.png" id="5_hvifm"]
 [ext_resource type="Texture2D" uid="uid://te18fgdfvyoe" path="res://Assets/Art/Ranks/A_Rank.png" id="5_l65g7"]
 [ext_resource type="Texture2D" uid="uid://brfpm3r0xl5c2" path="res://Assets/Art/Ranks/B_Rank.png" id="6_cmfhd"]
 [ext_resource type="Texture2D" uid="uid://bch0742wa8vma" path="res://Assets/Art/Ranks/C_Rank.png" id="7_k0vuf"]
@@ -95,27 +97,48 @@ theme_override_fonts/font = ExtResource("1_h6jqq")
 theme_override_font_sizes/font_size = 64
 text = "Times Wrong Shipping Used"
 
-[node name="PlayAgainButton" type="Button" parent="."]
-visible = false
+[node name="PlayAgainButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 744.0
 offset_top = 745.0
 offset_right = 1228.0
 offset_bottom = 869.0
-theme_override_fonts/font = ExtResource("1_h6jqq")
-theme_override_font_sizes/font_size = 64
-text = "Play Again"
+texture_normal = ExtResource("4_i4fgy")
+texture_hover = ExtResource("5_hvifm")
+stretch_mode = 0
 
-[node name="QuitButton" type="Button" parent="."]
-visible = false
+[node name="Label" type="Label" parent="PlayAgainButton"]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 23.0
+offset_right = 424.0
+offset_bottom = 123.0
+theme_override_fonts/font = ExtResource("1_h6jqq")
+theme_override_font_sizes/font_size = 60
+text = "Play Again"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuitButton" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 748.0
 offset_top = 893.0
 offset_right = 1226.0
 offset_bottom = 1015.0
+texture_normal = ExtResource("4_i4fgy")
+texture_hover = ExtResource("5_hvifm")
+stretch_mode = 0
+
+[node name="Label" type="Label" parent="QuitButton"]
+offset_left = 62.0
+offset_top = 23.0
+offset_right = 424.0
+offset_bottom = 123.0
 theme_override_fonts/font = ExtResource("1_h6jqq")
-theme_override_font_sizes/font_size = 64
+theme_override_font_sizes/font_size = 60
 text = "Quit"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ButtonClickSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_6uh0a")
