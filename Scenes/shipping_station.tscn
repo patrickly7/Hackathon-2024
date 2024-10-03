@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/shipping_station.gd" id="1_cq8ni"]
 [ext_resource type="Texture2D" uid="uid://dg3bi6cu2vrf6" path="res://Assets/Art/Icons/Graybox_Envelope.png" id="3_bsgse"]
-[ext_resource type="Texture2D" uid="uid://cwal7pn3kd5l1" path="res://Assets/Art/ShippingStation.png" id="3_yecbh"]
+[ext_resource type="Texture2D" uid="uid://ddqvcjusjstxn" path="res://Assets/Art/ShippingStation.png" id="3_yecbh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yv2qp"]
 size = Vector2(230, 211)

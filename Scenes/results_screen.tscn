@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/results_screen.gd" id="1_0kxqi"]
 [ext_resource type="FontFile" uid="uid://ktnlyqclx0vo" path="res://Assets/Fonts/VCR_OSD_MONO_1.001.ttf" id="1_h6jqq"]
 [ext_resource type="Texture2D" uid="uid://bs1gsfxi6lcvo" path="res://Assets/Art/Background.png" id="2_cbcp0"]
-[ext_resource type="AudioStream" uid="uid://60ittxrxii0m" path="res://Assets/Music/Button_Click.mp3" id="3_6uh0a"]
+[ext_resource type="AudioStream" uid="uid://b11x76aq4b6bw" path="res://Assets/Music/Button_Click.mp3" id="3_6uh0a"]
 [ext_resource type="Texture2D" uid="uid://bhsmf18qiffv" path="res://Assets/Art/Ranks/S_Rank.png" id="4_heltk"]
 [ext_resource type="Texture2D" uid="uid://cqr73h5astmff" path="res://Assets/Art/ButtonBackground.png" id="4_i4fgy"]
 [ext_resource type="Texture2D" uid="uid://dos6u6vlkiunl" path="res://Assets/Art/ButtonBackground_Hover.png" id="5_hvifm"]
@@ -98,6 +98,7 @@ theme_override_font_sizes/font_size = 64
 text = "Times Wrong Shipping Used"
 
 [node name="PlayAgainButton" type="TextureButton" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 744.0
 offset_top = 745.0
@@ -120,6 +121,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="QuitButton" type="TextureButton" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 748.0
 offset_top = 893.0
@@ -130,6 +132,7 @@ texture_hover = ExtResource("5_hvifm")
 stretch_mode = 0
 
 [node name="Label" type="Label" parent="QuitButton"]
+layout_mode = 0
 offset_left = 62.0
 offset_top = 23.0
 offset_right = 424.0
