@@ -12,6 +12,8 @@ func _ready():
 	Global.wrongCardsPulled = 0
 	Global.correctCardsPulled = 0
 	
+	Global.isPlayerPaused = false
+	
 	if Global.firstTimePlaying:
 		open_help_menu()
 	
